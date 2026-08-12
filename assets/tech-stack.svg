@@ -1,330 +1,697 @@
 <svg xmlns="http://www.w3.org/2000/svg"
      width="1300"
-     height="300"
-     viewBox="0 0 1300 300">
+     height="760"
+     viewBox="0 0 1300 760">
 
   <defs>
 
-    <linearGradient id="bg"
-                    x1="0"
-                    y1="0"
-                    x2="1"
-                    y2="1">
-
-      <stop offset="0%" stop-color="#000000"/>
-      <stop offset="100%" stop-color="#0D0D0D"/>
-
+    <!-- Background -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020202"/>
+      <stop offset="100%" stop-color="#0b0f14"/>
     </linearGradient>
 
+    <!-- Grid -->
+    <pattern id="grid"
+             width="32"
+             height="32"
+             patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32"
+            fill="none"
+            stroke="#ffffff"
+            stroke-opacity="0.055"
+            stroke-width="1"/>
+    </pattern>
+
+    <!-- Glow -->
     <filter id="glow">
-
-      <feGaussianBlur stdDeviation="2"
+      <feGaussianBlur stdDeviation="3"
                       result="blur"/>
-
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
-
     </filter>
+
+    <!-- Soft glow -->
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+
+    <!-- Scanline -->
+    <linearGradient id="scan"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="0">
+      <stop offset="0%"
+            stop-color="#ffffff"
+            stop-opacity="0"/>
+      <stop offset="50%"
+            stop-color="#ffffff"
+            stop-opacity="0.25"/>
+      <stop offset="100%"
+            stop-color="#ffffff"
+            stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Animated particles -->
+    <circle id="particle"
+            r="1.5"
+            fill="#ffffff"
+            opacity="0.65"/>
 
   </defs>
 
 
+  <!-- ===================================================== -->
   <!-- BACKGROUND -->
+  <!-- ===================================================== -->
 
   <rect width="1300"
-        height="300"
+        height="760"
         fill="url(#bg)"/>
 
+  <rect width="1300"
+        height="760"
+        fill="url(#grid)"/>
 
-  <!-- GRID -->
 
-  <g stroke="#151515"
-     stroke-width="1">
+  <!-- ===================================================== -->
+  <!-- BORDER -->
+  <!-- ===================================================== -->
 
-    <path d="M0 60H1300"/>
-    <path d="M0 120H1300"/>
-    <path d="M0 180H1300"/>
-    <path d="M0 240H1300"/>
+  <rect x="22"
+        y="22"
+        width="1256"
+        height="716"
+        rx="8"
+        fill="none"
+        stroke="#ffffff"
+        stroke-opacity="0.20"/>
 
-    <path d="M100 0V300"/>
-    <path d="M200 0V300"/>
-    <path d="M300 0V300"/>
-    <path d="M400 0V300"/>
-    <path d="M500 0V300"/>
-    <path d="M600 0V300"/>
-    <path d="M700 0V300"/>
-    <path d="M800 0V300"/>
-    <path d="M900 0V300"/>
-    <path d="M1000 0V300"/>
-    <path d="M1100 0V300"/>
-    <path d="M1200 0V300"/>
+  <path d="M22 58 H170"
+        stroke="#ffffff"
+        stroke-opacity="0.35"/>
+
+  <path d="M1130 58 H1278"
+        stroke="#ffffff"
+        stroke-opacity="0.35"/>
+
+
+  <!-- ===================================================== -->
+  <!-- PARTICLES -->
+  <!-- ===================================================== -->
+
+  <g>
+
+    <use href="#particle"
+         x="95"
+         y="110">
+      <animate attributeName="opacity"
+               values="0.1;0.8;0.1"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </use>
+
+    <use href="#particle"
+         x="210"
+         y="250">
+      <animate attributeName="opacity"
+               values="0.2;0.9;0.2"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </use>
+
+    <use href="#particle"
+         x="420"
+         y="125">
+      <animate attributeName="opacity"
+               values="0.1;0.7;0.1"
+               dur="3.5s"
+               repeatCount="indefinite"/>
+    </use>
+
+    <use href="#particle"
+         x="690"
+         y="100">
+      <animate attributeName="opacity"
+               values="0.1;0.8;0.1"
+               dur="4.5s"
+               repeatCount="indefinite"/>
+    </use>
+
+    <use href="#particle"
+         x="1040"
+         y="190">
+      <animate attributeName="opacity"
+               values="0.2;0.8;0.2"
+               dur="3.2s"
+               repeatCount="indefinite"/>
+    </use>
+
+    <use href="#particle"
+         x="1170"
+         y="350">
+      <animate attributeName="opacity"
+               values="0.1;0.7;0.1"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </use>
+
+    <use href="#particle"
+         x="330"
+         y="650">
+      <animate attributeName="opacity"
+               values="0.1;0.8;0.1"
+               dur="3.7s"
+               repeatCount="indefinite"/>
+    </use>
+
+    <use href="#particle"
+         x="920"
+         y="660">
+      <animate attributeName="opacity"
+               values="0.2;0.8;0.2"
+               dur="4.2s"
+               repeatCount="indefinite"/>
+    </use>
 
   </g>
 
 
-  <!-- FRAME -->
-
-  <rect x="18"
-        y="18"
-        width="1264"
-        height="264"
-        fill="none"
-        stroke="#333333"/>
-
-
-  <!-- CORNERS -->
-
-  <path d="M18 55V18H55"
-        stroke="#FFFFFF"
-        stroke-width="2"
-        fill="none"/>
-
-  <path d="M1245 18H1282V55"
-        stroke="#FFFFFF"
-        stroke-width="2"
-        fill="none"/>
-
-  <path d="M18 245V282H55"
-        stroke="#FFFFFF"
-        stroke-width="2"
-        fill="none"/>
-
-  <path d="M1245 282H1282V245"
-        stroke="#FFFFFF"
-        stroke-width="2"
-        fill="none"/>
-
-
+  <!-- ===================================================== -->
   <!-- HEADER -->
+  <!-- ===================================================== -->
 
-  <text x="45"
-        y="53"
-        fill="#FFFFFF"
+  <text x="70"
+        y="105"
+        fill="#ffffff"
         font-family="monospace"
-        font-size="17"
-        font-weight="bold">
+        font-size="26"
+        font-weight="bold"
+        letter-spacing="2">
 
-    // TECH_STACK
-
-  </text>
-
-
-  <text x="1255"
-        y="53"
-        fill="#666666"
-        font-family="monospace"
-        font-size="11"
-        text-anchor="end">
-
-    MODULES_LOADED
-
-  </text>
-
-
-  <!-- STATUS -->
-
-  <circle cx="48"
-          cy="78"
-          r="3"
-          fill="#FFFFFF"
-          filter="url(#glow)">
+    &gt; TECH_STACK_
 
     <animate attributeName="opacity"
-             values=".2;1;.2"
-             dur="1.5s"
-             repeatCount="indefinite"/>
-
-  </circle>
-
-
-  <text x="60"
-        y="82"
-        fill="#AAAAAA"
-        font-family="monospace"
-        font-size="11">
-
-    SECURITY / DEVOPS / DEVELOPMENT
-
-  </text>
-
-
-  <!-- DIVIDER -->
-
-  <line x1="42"
-        y1="98"
-        x2="1258"
-        y2="98"
-        stroke="#333333"/>
-
-
-  <!-- LANGUAGE BLOCK -->
-
-  <text x="55"
-        y="128"
-        fill="#777777"
-        font-family="monospace"
-        font-size="11">
-
-    LANGUAGES
-
-  </text>
-
-  <text x="210"
-        y="128"
-        fill="#FFFFFF"
-        font-family="monospace"
-        font-size="12">
-
-    Python  •  PowerShell  •  Java  •  JavaScript  •  HTML  •  CSS
-
-  </text>
-
-
-  <!-- CLOUD BLOCK -->
-
-  <text x="55"
-        y="158"
-        fill="#777777"
-        font-family="monospace"
-        font-size="11">
-
-    CLOUD / DEVOPS
-
-  </text>
-
-  <text x="210"
-        y="158"
-        fill="#FFFFFF"
-        font-family="monospace"
-        font-size="12">
-
-    Azure  •  GitHub  •  GitLab  •  Docker  •  Linux  •  Jenkins
-
-  </text>
-
-
-  <!-- SECURITY BLOCK -->
-
-  <text x="55"
-        y="188"
-        fill="#777777"
-        font-family="monospace"
-        font-size="11">
-
-    SECURITY
-
-  </text>
-
-  <text x="210"
-        y="188"
-        fill="#FFFFFF"
-        font-family="monospace"
-        font-size="12">
-
-    Microsoft Defender  •  Burp Suite  •  Aqua Security
-
-  </text>
-
-
-  <!-- SECURITY CONTINUED -->
-
-  <text x="210"
-        y="212"
-        fill="#FFFFFF"
-        font-family="monospace"
-        font-size="12">
-
-    SAST  •  SCA  •  DAST  •  OWASP  •  Vulnerability Management
-
-  </text>
-
-
-  <!-- WEB -->
-
-  <text x="55"
-        y="242"
-        fill="#777777"
-        font-family="monospace"
-        font-size="11">
-
-    WEB / DATA
-
-  </text>
-
-  <text x="210"
-        y="242"
-        fill="#FFFFFF"
-        font-family="monospace"
-        font-size="12">
-
-    PHP  •  MySQL  •  JavaScript  •  Responsive Web Applications
-
-  </text>
-
-
-  <!-- LIVE CURSOR -->
-
-  <text x="55"
-        y="268"
-        fill="#FFFFFF"
-        font-family="monospace"
-        font-size="11">
-
-    &gt; loading_security_modules_
-
-    <animate attributeName="opacity"
-             values="1;0;1"
-             dur="1.1s"
+             values="1;0.65;1"
+             dur="3s"
              repeatCount="indefinite"/>
 
   </text>
 
+  <text x="70"
+        y="132"
+        fill="#777777"
+        font-family="monospace"
+        font-size="13"
+        letter-spacing="1">
 
+    SYSTEM_CAPABILITIES // DEVELOPMENT // SECURITY // AUTOMATION
+
+  </text>
+
+
+  <!-- ===================================================== -->
   <!-- SCAN LINE -->
+  <!-- ===================================================== -->
 
-  <rect x="20"
-        y="20"
-        width="2"
-        height="260"
-        fill="#FFFFFF"
-        opacity=".06">
+  <rect x="40"
+        y="155"
+        width="1220"
+        height="2"
+        fill="url(#scan)">
 
-    <animate attributeName="x"
-             values="20;1280;20"
+    <animate attributeName="y"
+             values="155;710;155"
              dur="8s"
              repeatCount="indefinite"/>
 
   </rect>
 
 
-  <!-- ACTIVITY LINE -->
+  <!-- ===================================================== -->
+  <!-- LANGUAGES -->
+  <!-- ===================================================== -->
 
-  <path d="M1050 260
-           L1070 260
-           L1080 245
-           L1090 270
-           L1105 252
-           L1115 260
-           L1130 260
-           L1140 240
-           L1150 270
-           L1165 260
-           L1180 260
-           L1190 248
-           L1200 260
-           L1250 260"
-        fill="none"
-        stroke="#FFFFFF"
-        stroke-width="1"
-        opacity=".45">
+  <text x="70"
+        y="190"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="18"
+        font-weight="bold">
+
+    &gt; LANGUAGES
+
+  </text>
+
+  <text x="90"
+        y="225"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ PYTHON ]
+
+  </text>
+
+  <text x="250"
+        y="225"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ JAVASCRIPT ]
+
+  </text>
+
+  <text x="450"
+        y="225"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ PHP ]
+
+  </text>
+
+  <text x="560"
+        y="225"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ HTML ]
+
+  </text>
+
+  <text x="680"
+        y="225"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ CSS ]
+
+  </text>
+
+  <text x="790"
+        y="225"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ POWERSHELL ]
+
+  </text>
+
+  <text x="970"
+        y="225"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ JAVA ]
+
+  </text>
+
+  <text x="1080"
+        y="225"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ PERL ]
+
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- SECURITY -->
+  <!-- ===================================================== -->
+
+  <text x="70"
+        y="280"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="18"
+        font-weight="bold">
+
+    &gt; SECURITY / DEVSECOPS
+
+  </text>
+
+  <text x="90"
+        y="315"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ DEFENDER ]
+
+  </text>
+
+  <text x="245"
+        y="315"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ SENTINEL ]
+
+  </text>
+
+  <text x="390"
+        y="315"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ KQL ]
+
+  </text>
+
+  <text x="490"
+        y="315"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ BURP_SUITE ]
+
+  </text>
+
+  <text x="660"
+        y="315"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ SAST ]
+
+  </text>
+
+  <text x="750"
+        y="315"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ DAST ]
+
+  </text>
+
+  <text x="850"
+        y="315"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ SCA ]
+
+  </text>
+
+  <text x="930"
+        y="315"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ VULNERABILITY_MANAGEMENT ]
+
+  </text>
+
+  <text x="90"
+        y="350"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ OWASP ]
+
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- CLOUD / INFRASTRUCTURE -->
+  <!-- ===================================================== -->
+
+  <text x="70"
+        y="405"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="18"
+        font-weight="bold">
+
+    &gt; CLOUD / INFRASTRUCTURE
+
+  </text>
+
+  <text x="90"
+        y="440"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ AZURE ]
+
+  </text>
+
+  <text x="210"
+        y="440"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ DOCKER ]
+
+  </text>
+
+  <text x="345"
+        y="440"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ GITHUB_ACTIONS ]
+
+  </text>
+
+  <text x="540"
+        y="440"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ CI/CD ]
+
+  </text>
+
+  <text x="650"
+        y="440"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ INFRASTRUCTURE_AS_CODE ]
+
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- FRAMEWORKS / RUNTIME -->
+  <!-- ===================================================== -->
+
+  <text x="70"
+        y="495"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="18"
+        font-weight="bold">
+
+    &gt; FRAMEWORKS / RUNTIME
+
+  </text>
+
+  <text x="90"
+        y="530"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ NODE.JS ]
+
+  </text>
+
+  <text x="230"
+        y="530"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ ELECTRON ]
+
+  </text>
+
+  <text x="380"
+        y="530"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ MYSQL ]
+
+  </text>
+
+  <text x="500"
+        y="530"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ REST_APIS ]
+
+  </text>
+
+  <text x="650"
+        y="530"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ YOUTUBE_API ]
+
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- TOOLS -->
+  <!-- ===================================================== -->
+
+  <text x="70"
+        y="585"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="18"
+        font-weight="bold">
+
+    &gt; TOOLS / PLATFORMS
+
+  </text>
+
+  <text x="90"
+        y="620"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ GIT ]
+
+  </text>
+
+  <text x="180"
+        y="620"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ GITHUB ]
+
+  </text>
+
+  <text x="300"
+        y="620"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ VS_CODE ]
+
+  </text>
+
+  <text x="430"
+        y="620"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ XAMPP ]
+
+  </text>
+
+  <text x="550"
+        y="620"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    [ RAZORPAY ]
+
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- STATUS -->
+  <!-- ===================================================== -->
+
+  <line x1="70"
+        y1="675"
+        x2="1230"
+        y2="675"
+        stroke="#ffffff"
+        stroke-opacity="0.15"/>
+
+  <circle cx="82"
+          cy="704"
+          r="5"
+          fill="#ffffff"
+          filter="url(#glow)">
 
     <animate attributeName="opacity"
-             values=".2;.8;.2"
-             dur="3s"
+             values="1;0.3;1"
+             dur="1.8s"
              repeatCount="indefinite"/>
 
-  </path>
+  </circle>
+
+  <text x="98"
+        y="709"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12"
+        letter-spacing="1">
+
+    SYSTEM STATUS: ONLINE
+
+  </text>
+
+  <text x="1080"
+        y="709"
+        fill="#777777"
+        font-family="monospace"
+        font-size="11">
+
+    BUILD // SECURE // AUTOMATE
+
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- CURSOR -->
+  <!-- ===================================================== -->
+
+  <rect x="72"
+        y="98"
+        width="10"
+        height="22"
+        fill="#ffffff">
+
+    <animate attributeName="opacity"
+             values="1;0;1"
+             dur="1s"
+             repeatCount="indefinite"/>
+
+  </rect>
 
 </svg>
