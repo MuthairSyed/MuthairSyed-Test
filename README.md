@@ -1,89 +1,53 @@
-<!-- ========================================================= -->
-<!-- HEADER -->
-<!-- ========================================================= -->
-
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/header.svg"
-    width="96%"
-    alt="Muthair Syed Header"
-  />
-</p>
-
-<br>
-
-
-<!-- ========================================================= -->
-<!-- ABOUT + GITHUB STATS -->
-<!-- ========================================================= -->
-
-<table align="center" width="96%" border="0">
+<table align="center" width="900" cellpadding="0" cellspacing="0" border="0">
 <tr>
+<td align="center" style="padding:0;margin:0;line-height:0;">
 
-<td width="50%" align="center" valign="top">
-
-<img
-  src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/about.svg"
-  width="100%"
-  alt="About Muthair Syed"
-/>
+<img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/header.svg" width="900" alt="Muthair Syed Header">
 
 </td>
+</tr>
 
-<td width="50%" align="center" valign="top">
+<tr>
+<td align="center" style="padding:0;margin:0;line-height:0;">
 
-<img
-  src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/git-status.svg"
-  width="100%"
-  alt="GitHub Stats"
-/>
+<table width="900" cellpadding="0" cellspacing="0" border="0">
+<tr>
 
+<td width="450" valign="top" style="padding:0;margin:0;line-height:0;">
+<img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/about.svg" width="450" alt="About Me">
+</td>
+
+<td width="450" valign="top" style="padding:0;margin:0;line-height:0;">
+<img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/git-status.svg" width="450" alt="GitHub Status">
 </td>
 
 </tr>
 </table>
 
-<br>
+</td>
+</tr>
 
+<tr>
+<td align="center" style="padding:0;margin:0;line-height:0;">
 
-<!-- ========================================================= -->
-<!-- FEATURED PROJECTS -->
-<!-- ========================================================= -->
+<img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/featured-projects.svg" width="900" alt="Featured Projects">
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/featured-projects.svg"
-    width="96%"
-    alt="Featured Projects"
-  />
-</p>
+</td>
+</tr>
 
-<br>
+<tr>
+<td align="center" style="padding:0;margin:0;line-height:0;">
 
+<img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/tech-stack.svg" width="900" alt="Tech Stack">
 
-<!-- ========================================================= -->
-<!-- TECH STACK -->
-<!-- ========================================================= -->
+</td>
+</tr>
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/tech-stack.svg"
-    width="96%"
-    alt="Technology Stack"
-  />
-</p>
+<tr>
+<td align="center" style="padding:0;margin:0;line-height:0;">
 
-<br>
+<img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/footer.svg" width="900" alt="Footer">
 
-
-<!-- ========================================================= -->
-<!-- FOOTER -->
-<!-- ========================================================= -->
-
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/footer.svg"
-    width="96%"
-    alt="Footer"
-  />
-</p>
+</td>
+</tr>
+</table>
