@@ -11,7 +11,7 @@
         "Windows"
       ],
       "github": "https://github.com/MuthairSyed/AI-Ram-Booster",
-      "live_demo": null,
+      "live": null,
       "status": "ACTIVE",
       "last_updated": "AUTO",
       "icon": "RAM"
@@ -26,8 +26,8 @@
         "KQL",
         "Security Automation"
       ],
-      "github": "https://github.com/MuthairSyed/MuthairSyed",
-      "live_demo": null,
+      "github": "https://github.com/MuthairSyed/vulnerbility-dashboard",
+      "live": null,
       "status": "ACTIVE",
       "last_updated": "AUTO",
       "icon": "SEC"
@@ -44,7 +44,7 @@
         "Razorpay"
       ],
       "github": "https://github.com/MuthairSyed/ReDDxStore",
-      "live_demo": "https://reddxstore.page.gd/",
+      "live": "https://reddxstore.page.gd/",
       "status": "ACTIVE",
       "last_updated": "AUTO",
       "icon": "WEB"
@@ -61,7 +61,7 @@
         "YouTube API"
       ],
       "github": "https://github.com/MuthairSyed/Youtube-Portfolio",
-      "live_demo": "http://auroraxyt.gamer.gd/",
+      "live": "http://auroraxyt.gamer.gd/",
       "status": "ACTIVE",
       "last_updated": "AUTO",
       "icon": "YT"
