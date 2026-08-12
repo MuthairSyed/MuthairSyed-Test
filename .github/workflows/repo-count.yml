@@ -1,0 +1,45 @@
+name: Update Repository Count
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-repo-count:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get repository count
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          COUNT=$(gh repo list MuthairSyed --limit 1000 --json name --jq 'length')
+
+          echo "Repository count: $COUNT"
+
+          cat > repo-count.json <<EOF
+          {
+            "schemaVersion": 1,
+            "label": "REPOSITORIES",
+            "message": "$COUNT",
+            "color": "ffffff"
+          }
+          EOF
+
+      - name: Commit repository count
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add repo-count.json
+
+          git diff --cached --quiet || git commit -m "Update repository count"
+
+          git push
