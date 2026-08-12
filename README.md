@@ -37,7 +37,13 @@
 </p>
 
 <br>
-
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/tech-stack.svg"
+    width="100%"
+    alt="Tech Stack"
+  />
+</p>
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/footer.svg"
