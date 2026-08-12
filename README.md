@@ -26,8 +26,6 @@
     alt="Repositories"
   />
 </a>
-
-
   <a href="https://github.com/MuthairSyed?tab=stars">
     <img src="https://img.shields.io/github/stars/MuthairSyed?style=flat-square&label=STARS&labelColor=000000&color=FFFFFF&logo=github&logoColor=FFFFFF" />
   </a>
@@ -37,8 +35,6 @@
   </a>
 
 </p>
-## Featured Projects
-
 <p align="center">
   <img src="./assets/featured-projects.svg" width="100%" alt="Featured Projects">
 </p>
