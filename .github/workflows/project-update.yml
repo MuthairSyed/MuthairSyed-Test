@@ -2,8 +2,6 @@ name: Update Featured Projects
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * *"
 
 permissions:
   contents: write
@@ -21,20 +19,7 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Generate Featured Projects SVG
+      - name: Generate Featured Projects
         run: |
-          python scripts/generate-projects-svg.py
-
-      - name: Commit updated SVG
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add assets/featured-projects.svg
-
-          if git diff --cached --quiet; then
-            echo "No changes detected."
-          else
-            git commit -m "Update featured projects"
-            git push
-          fi
+          echo "Featured projects are now managed directly in README."
+          echo "No SVG generation required."
