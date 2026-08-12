@@ -1,0 +1,887 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1300"
+     height="1050"
+     viewBox="0 0 1300 1050">
+
+  <defs>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="100%" stop-color="#0b0d10"/>
+    </linearGradient>
+
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111419"/>
+      <stop offset="100%" stop-color="#050607"/>
+    </linearGradient>
+
+    <pattern id="grid"
+             width="45"
+             height="45"
+             patternUnits="userSpaceOnUse">
+      <path d="M45 0H0V45"
+            fill="none"
+            stroke="#ffffff"
+            stroke-opacity=".05"
+            stroke-width="1"/>
+    </pattern>
+
+    <pattern id="scan"
+             width="1"
+             height="8"
+             patternUnits="userSpaceOnUse">
+      <rect width="1"
+            height="1"
+            fill="#ffffff"
+            opacity=".025"/>
+    </pattern>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+  <!-- BACKGROUND -->
+
+  <rect width="1300"
+        height="1050"
+        fill="url(#bg)"/>
+
+  <rect width="1300"
+        height="1050"
+        fill="url(#grid)"/>
+
+  <rect width="1300"
+        height="1050"
+        fill="url(#scan)"/>
+
+
+  <!-- PARTICLES -->
+
+  <g fill="#ffffff">
+
+    <circle cx="80" cy="100" r="2">
+      <animate attributeName="opacity"
+               values=".1;.9;.1"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="210" cy="180" r="1.5">
+      <animate attributeName="cy"
+               values="180;205;180"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="390" cy="90" r="2">
+      <animate attributeName="opacity"
+               values=".1;1;.1"
+               dur="2.8s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="600" cy="155" r="1.5">
+      <animate attributeName="cy"
+               values="155;175;155"
+               dur="3.5s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="850" cy="95" r="2">
+      <animate attributeName="opacity"
+               values=".2;1;.2"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1080" cy="180" r="1.5">
+      <animate attributeName="cy"
+               values="180;200;180"
+               dur="4.2s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1200" cy="90" r="2">
+      <animate attributeName="opacity"
+               values=".1;.8;.1"
+               dur="2.7s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="100" cy="850" r="2">
+      <animate attributeName="cy"
+               values="850;825;850"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="350" cy="940" r="1.5">
+      <animate attributeName="opacity"
+               values=".2;1;.2"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="700" cy="870" r="2">
+      <animate attributeName="cy"
+               values="870;895;870"
+               dur="3.7s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="980" cy="950" r="1.5">
+      <animate attributeName="opacity"
+               values=".1;.9;.1"
+               dur="2.9s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1190" cy="850" r="2">
+      <animate attributeName="cy"
+               values="850;875;850"
+               dur="4.3s"
+               repeatCount="indefinite"/>
+    </circle>
+
+  </g>
+
+
+  <!-- TITLE -->
+
+  <text x="650"
+        y="60"
+        text-anchor="middle"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="28"
+        font-weight="bold"
+        letter-spacing="6"
+        filter="url(#glow)">
+
+    ABOUT_ME.exe
+
+    <animate attributeName="opacity"
+             values="1;.55;1"
+             dur="3s"
+             repeatCount="indefinite"/>
+
+  </text>
+
+  <text x="650"
+        y="88"
+        text-anchor="middle"
+        fill="#666666"
+        font-family="monospace"
+        font-size="11"
+        letter-spacing="3">
+
+    // IDENTITY // SECURITY // AUTOMATION // ENGINEERING
+
+  </text>
+
+
+  <!-- ABOUT PANEL -->
+
+  <rect x="55"
+        y="125"
+        width="1190"
+        height="350"
+        rx="4"
+        fill="url(#panel)"
+        stroke="#ffffff"
+        stroke-opacity=".25"/>
+
+  <path d="M55 165V125H95"
+        stroke="#ffffff"
+        stroke-width="2"
+        fill="none"/>
+
+  <path d="M1205 435H1245V395"
+        stroke="#ffffff"
+        stroke-width="2"
+        fill="none"/>
+
+
+  <!-- STATUS -->
+
+  <circle cx="1170"
+          cy="160"
+          r="5"
+          fill="#ffffff"
+          filter="url(#glow)">
+
+    <animate attributeName="opacity"
+             values="1;.2;1"
+             dur="1.4s"
+             repeatCount="indefinite"/>
+
+  </circle>
+
+  <text x="1185"
+        y="165"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+
+    ONLINE
+
+  </text>
+
+
+  <!-- IDENTITY -->
+
+  <text x="85"
+        y="185"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; IDENTITY
+
+  </text>
+
+  <text x="85"
+        y="220"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="24"
+        font-weight="bold">
+
+    Muthair Syed
+
+  </text>
+
+  <text x="85"
+        y="250"
+        fill="#aaaaaa"
+        font-family="monospace"
+        font-size="12">
+
+    DevSecOps Engineer • Cybersecurity • Automation
+
+  </text>
+
+
+  <!-- TERMINAL -->
+
+  <text x="85"
+        y="295"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; ROLE:
+
+  </text>
+
+  <text x="175"
+        y="295"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12">
+
+    DEVSECOPS ENGINEER
+
+  </text>
+
+
+  <text x="85"
+        y="325"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; FOCUS:
+
+  </text>
+
+  <text x="175"
+        y="325"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12">
+
+    SECURITY • AUTOMATION • CLOUD
+
+  </text>
+
+
+  <text x="85"
+        y="355"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; MISSION:
+
+  </text>
+
+  <text x="175"
+        y="355"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12">
+
+    BUILD → SECURE → AUTOMATE
+
+  </text>
+
+
+  <text x="85"
+        y="385"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; CURRENT_STATUS:
+
+  </text>
+
+  <text x="250"
+        y="385"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12">
+
+    ACTIVE
+
+    <animate attributeName="opacity"
+             values="1;.35;1"
+             dur="1.8s"
+             repeatCount="indefinite"/>
+
+  </text>
+
+
+  <!-- DESCRIPTION -->
+
+  <text x="700"
+        y="190"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; DESCRIPTION
+
+  </text>
+
+  <text x="700"
+        y="225"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    Building secure and automated solutions
+
+  </text>
+
+  <text x="700"
+        y="248"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    across cybersecurity and DevSecOps.
+
+  </text>
+
+  <text x="700"
+        y="285"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    Turning complex engineering problems
+
+  </text>
+
+  <text x="700"
+        y="308"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    into scalable security automation.
+
+  </text>
+
+  <text x="700"
+        y="345"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12">
+
+    [ SECURITY ]
+
+  </text>
+
+  <text x="700"
+        y="370"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12">
+
+    [ AUTOMATION ]
+
+  </text>
+
+  <text x="700"
+        y="395"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12">
+
+    [ CLOUD SECURITY ]
+
+  </text>
+
+
+  <!-- TECH STACK TITLE -->
+
+  <text x="650"
+        y="535"
+        text-anchor="middle"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="24"
+        font-weight="bold"
+        letter-spacing="5"
+        filter="url(#glow)">
+
+    TECH_STACK
+
+  </text>
+
+  <text x="650"
+        y="560"
+        text-anchor="middle"
+        fill="#666666"
+        font-family="monospace"
+        font-size="10"
+        letter-spacing="2">
+
+    // TOOLCHAIN INITIALIZED //
+
+  </text>
+
+
+  <!-- STACK PANEL -->
+
+  <rect x="55"
+        y="590"
+        width="1190"
+        height="360"
+        rx="4"
+        fill="url(#panel)"
+        stroke="#ffffff"
+        stroke-opacity=".25"/>
+
+
+  <!-- COLUMN 1 -->
+
+  <text x="85"
+        y="630"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
+    LANGUAGES
+
+  </text>
+
+  <text x="85"
+        y="660"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; Python
+
+  </text>
+
+  <text x="85"
+        y="685"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; JavaScript
+
+  </text>
+
+  <text x="85"
+        y="710"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; PHP
+
+  </text>
+
+  <text x="85"
+        y="735"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; HTML / CSS
+
+  </text>
+
+
+  <!-- SECURITY -->
+
+  <text x="330"
+        y="630"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
+    SECURITY
+
+  </text>
+
+  <text x="330"
+        y="660"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; Microsoft Defender
+
+  </text>
+
+  <text x="330"
+        y="685"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; Microsoft Sentinel
+
+  </text>
+
+  <text x="330"
+        y="710"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; Burp Suite
+
+  </text>
+
+  <text x="330"
+        y="735"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; AppScan
+
+  </text>
+
+  <text x="330"
+        y="760"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; KQL
+
+  </text>
+
+
+  <!-- DEVSECOPS -->
+
+  <text x="650"
+        y="630"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
+    DEVSECOPS
+
+  </text>
+
+  <text x="650"
+        y="660"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; GitHub / GitLab
+
+  </text>
+
+  <text x="650"
+        y="685"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; CI/CD
+
+  </text>
+
+  <text x="650"
+        y="710"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; SAST
+
+  </text>
+
+  <text x="650"
+        y="735"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; DAST
+
+  </text>
+
+  <text x="650"
+        y="760"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; SCA
+
+  </text>
+
+
+  <!-- CLOUD -->
+
+  <text x="940"
+        y="630"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
+    CLOUD
+
+  </text>
+
+  <text x="940"
+        y="660"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; Microsoft Azure
+
+  </text>
+
+  <text x="940"
+        y="685"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; Azure Security
+
+  </text>
+
+  <text x="940"
+        y="710"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; Defender
+
+  </text>
+
+  <text x="940"
+        y="735"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; Sentinel
+
+  </text>
+
+
+  <!-- DATABASES -->
+
+  <text x="85"
+        y="820"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
+    DATABASES
+
+  </text>
+
+  <text x="85"
+        y="850"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; MySQL
+
+  </text>
+
+
+  <!-- TOOLS -->
+
+  <text x="330"
+        y="820"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
+    TOOLS
+
+  </text>
+
+  <text x="330"
+        y="850"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; Docker
+
+  </text>
+
+  <text x="330"
+        y="875"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; Linux
+
+  </text>
+
+
+  <!-- SOFTWARE -->
+
+  <text x="650"
+        y="820"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
+    SOFTWARE ENGINEERING
+
+  </text>
+
+  <text x="650"
+        y="850"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; Node.js
+
+  </text>
+
+  <text x="650"
+        y="875"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; Electron
+
+  </text>
+
+
+  <!-- AUTOMATION -->
+
+  <text x="940"
+        y="820"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
+    AUTOMATION
+
+  </text>
+
+  <text x="940"
+        y="850"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; Python Automation
+
+  </text>
+
+  <text x="940"
+        y="875"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; Security Automation
+
+  </text>
+
+
+  <!-- CURSOR -->
+
+  <text x="85"
+        y="925"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; SYSTEM_READY_
+
+    <animate attributeName="opacity"
+             values="1;0;1"
+             dur="1s"
+             repeatCount="indefinite"/>
+
+  </text>
+
+
+  <!-- BOTTOM LINE -->
+
+  <line x1="70"
+        y1="985"
+        x2="1230"
+        y2="985"
+        stroke="#ffffff"
+        stroke-opacity=".2"/>
+
+  <text x="650"
+        y="1015"
+        text-anchor="middle"
+        fill="#555555"
+        font-family="monospace"
+        font-size="10"
+        letter-spacing="3">
+
+    BUILD → SECURE → AUTOMATE → MONITOR
+
+  </text>
+
+</svg>
