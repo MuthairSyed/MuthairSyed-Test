@@ -1,0 +1,667 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1300"
+     height="760"
+     viewBox="0 0 1300 760">
+
+  <defs>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020202"/>
+      <stop offset="100%" stop-color="#0b0f14"/>
+    </linearGradient>
+
+    <pattern id="grid"
+             width="32"
+             height="32"
+             patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32"
+            fill="none"
+            stroke="#ffffff"
+            stroke-opacity=".055"/>
+    </pattern>
+
+    <linearGradient id="scan"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <circle id="particle"
+            r="1.5"
+            fill="#ffffff"/>
+
+  </defs>
+
+
+  <!-- ================================================= -->
+  <!-- BACKGROUND -->
+  <!-- ================================================= -->
+
+  <rect width="1300"
+        height="760"
+        fill="url(#bg)"/>
+
+  <rect width="1300"
+        height="760"
+        fill="url(#grid)"/>
+
+
+  <!-- ================================================= -->
+  <!-- OUTER FRAME -->
+  <!-- ================================================= -->
+
+  <rect x="22"
+        y="22"
+        width="1256"
+        height="716"
+        rx="8"
+        fill="none"
+        stroke="#ffffff"
+        stroke-opacity=".20"/>
+
+  <path d="M22 60H180"
+        stroke="#ffffff"
+        stroke-opacity=".35"/>
+
+  <path d="M1120 60H1278"
+        stroke="#ffffff"
+        stroke-opacity=".35"/>
+
+
+  <!-- ================================================= -->
+  <!-- PARTICLES -->
+  <!-- ================================================= -->
+
+  <g fill="#ffffff">
+
+    <use href="#particle" x="90" y="120">
+      <animate attributeName="opacity"
+               values=".1;.9;.1"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </use>
+
+    <use href="#particle" x="250" y="180">
+      <animate attributeName="opacity"
+               values=".2;.8;.2"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </use>
+
+    <use href="#particle" x="470" y="105">
+      <animate attributeName="opacity"
+               values=".1;.9;.1"
+               dur="3.5s"
+               repeatCount="indefinite"/>
+    </use>
+
+    <use href="#particle" x="760" y="140">
+      <animate attributeName="opacity"
+               values=".2;.9;.2"
+               dur="4.2s"
+               repeatCount="indefinite"/>
+    </use>
+
+    <use href="#particle" x="1080" y="190">
+      <animate attributeName="opacity"
+               values=".1;.8;.1"
+               dur="3.2s"
+               repeatCount="indefinite"/>
+    </use>
+
+    <use href="#particle" x="1180" y="500">
+      <animate attributeName="opacity"
+               values=".2;.9;.2"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </use>
+
+    <use href="#particle" x="180" y="640">
+      <animate attributeName="opacity"
+               values=".1;.8;.1"
+               dur="3.7s"
+               repeatCount="indefinite"/>
+    </use>
+
+    <use href="#particle" x="850" y="650">
+      <animate attributeName="opacity"
+               values=".2;.9;.2"
+               dur="4.5s"
+               repeatCount="indefinite"/>
+    </use>
+
+  </g>
+
+
+  <!-- ================================================= -->
+  <!-- HEADER -->
+  <!-- ================================================= -->
+
+  <text x="70"
+        y="105"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="27"
+        font-weight="bold"
+        letter-spacing="2">
+
+    &gt; ABOUT_ME_
+
+    <animate attributeName="opacity"
+             values="1;.6;1"
+             dur="3s"
+             repeatCount="indefinite"/>
+
+  </text>
+
+  <text x="70"
+        y="132"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12"
+        letter-spacing="2">
+
+    IDENTITY // PROFESSIONAL_FOCUS // CURRENT_WORK // STATUS
+
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- SCAN LINE -->
+  <!-- ================================================= -->
+
+  <rect x="40"
+        y="155"
+        width="1220"
+        height="2"
+        fill="url(#scan)">
+
+    <animate attributeName="y"
+             values="155;710;155"
+             dur="8s"
+             repeatCount="indefinite"/>
+
+  </rect>
+
+
+  <!-- ================================================= -->
+  <!-- IDENTITY -->
+  <!-- ================================================= -->
+
+  <text x="70"
+        y="195"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="18"
+        font-weight="bold">
+
+    &gt; IDENTITY
+
+  </text>
+
+
+  <text x="90"
+        y="230"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    NAME
+
+  </text>
+
+  <text x="280"
+        y="230"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
+    Muthair Syed
+
+  </text>
+
+
+  <text x="90"
+        y="265"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    ROLE
+
+  </text>
+
+  <text x="280"
+        y="265"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    DevSecOps Engineer
+
+  </text>
+
+
+  <text x="90"
+        y="300"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    ADDITIONAL_ROLE
+
+  </text>
+
+  <text x="280"
+        y="300"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    Customer Success Manager
+
+  </text>
+
+
+  <text x="90"
+        y="335"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    LOCATION
+
+  </text>
+
+  <text x="280"
+        y="335"
+        fill="#777777"
+        font-family="monospace"
+        font-size="13">
+
+    [ LOCATION ]
+
+  </text>
+
+
+  <text x="90"
+        y="370"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    GITHUB
+
+  </text>
+
+  <text x="280"
+        y="370"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="14">
+
+    MuthairSyed
+
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- VERTICAL DIVIDER -->
+  <!-- ================================================= -->
+
+  <line x1="650"
+        y1="180"
+        x2="650"
+        y2="590"
+        stroke="#ffffff"
+        stroke-opacity=".13"/>
+
+
+  <!-- ================================================= -->
+  <!-- PROFESSIONAL FOCUS -->
+  <!-- ================================================= -->
+
+  <text x="700"
+        y="195"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="18"
+        font-weight="bold">
+
+    &gt; PROFESSIONAL_FOCUS
+
+  </text>
+
+
+  <text x="720"
+        y="235"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="13">
+
+    [ DEVSECOPS ]
+
+  </text>
+
+  <text x="720"
+        y="270"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="13">
+
+    [ APPLICATION_SECURITY ]
+
+  </text>
+
+  <text x="720"
+        y="305"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="13">
+
+    [ VULNERABILITY_MANAGEMENT ]
+
+  </text>
+
+  <text x="720"
+        y="340"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="13">
+
+    [ SECURITY_AUTOMATION ]
+
+  </text>
+
+  <text x="720"
+        y="375"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="13">
+
+    [ CLOUD_SECURITY ]
+
+  </text>
+
+  <text x="720"
+        y="410"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="13">
+
+    [ WEB_DEVELOPMENT ]
+
+  </text>
+
+  <text x="720"
+        y="445"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="13">
+
+    [ CI/CD ]
+
+  </text>
+
+  <text x="720"
+        y="480"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="13">
+
+    [ MICROSOFT_SECURITY ]
+
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- CURRENTLY WORKING ON -->
+  <!-- ================================================= -->
+
+  <text x="70"
+        y="435"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="18"
+        font-weight="bold">
+
+    &gt; CURRENTLY_WORKING_ON
+
+  </text>
+
+
+  <text x="90"
+        y="470"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="13">
+
+    [ SECURITY_AUTOMATION ]
+
+  </text>
+
+  <text x="90"
+        y="505"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="13">
+
+    [ MICROSOFT_DEFENDER / SENTINEL ]
+
+  </text>
+
+  <text x="90"
+        y="540"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="13">
+
+    [ PYTHON_AUTOMATION ]
+
+  </text>
+
+  <text x="90"
+        y="575"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="13">
+
+    [ WEB_PROJECTS ]
+
+  </text>
+
+
+  <text x="90"
+        y="610"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="13">
+
+    [ OPEN_SOURCE_PROJECTS ]
+
+  </text>
+
+
+  <text x="90"
+        y="645"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="13">
+
+    [ GITHUB_AUTOMATION ]
+
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- LINKS -->
+  <!-- ================================================= -->
+
+  <text x="700"
+        y="540"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="17"
+        font-weight="bold">
+
+    &gt; CONNECT
+
+  </text>
+
+
+  <text x="720"
+        y="570"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12">
+
+    [ GITHUB ]
+
+  </text>
+
+  <text x="870"
+        y="570"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12">
+
+    [ LINKEDIN ]
+
+  </text>
+
+  <text x="720"
+        y="600"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12">
+
+    [ YOUTUBE ]
+
+  </text>
+
+  <text x="870"
+        y="600"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12">
+
+    [ PORTFOLIO ]
+
+  </text>
+
+  <text x="720"
+        y="630"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12">
+
+    [ EMAIL ]
+
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- STATUS -->
+  <!-- ================================================= -->
+
+  <line x1="70"
+        y1="675"
+        x2="1230"
+        y2="675"
+        stroke="#ffffff"
+        stroke-opacity=".15"/>
+
+
+  <circle cx="82"
+          cy="705"
+          r="5"
+          fill="#ffffff"
+          filter="url(#glow)">
+
+    <animate attributeName="opacity"
+             values="1;.2;1"
+             dur="1.5s"
+             repeatCount="indefinite"/>
+
+  </circle>
+
+
+  <text x="98"
+        y="710"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12"
+        letter-spacing="1">
+
+    SYSTEM ONLINE
+
+  </text>
+
+
+  <text x="300"
+        y="710"
+        fill="#777777"
+        font-family="monospace"
+        font-size="11">
+
+    BUILDING
+
+  </text>
+
+
+  <text x="410"
+        y="710"
+        fill="#777777"
+        font-family="monospace"
+        font-size="11">
+
+    LEARNING
+
+  </text>
+
+
+  <text x="530"
+        y="710"
+        fill="#777777"
+        font-family="monospace"
+        font-size="11">
+
+    AUTOMATING
+
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- TERMINAL CURSOR -->
+  <!-- ================================================= -->
+
+  <text x="1080"
+        y="710"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+
+    &gt;_
+
+
+    <animate attributeName="opacity"
+             values="1;0;1"
+             dur="1s"
+             repeatCount="indefinite"/>
+
+  </text>
+
+</svg>
