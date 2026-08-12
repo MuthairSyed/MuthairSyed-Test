@@ -37,3 +37,8 @@
   </a>
 
 </p>
+## Featured Projects
+
+<p align="center">
+  <img src="./assets/featured-projects.svg" width="100%" alt="Featured Projects">
+</p>
