@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Fetch GitHub statistics
         env:
@@ -27,6 +29,7 @@ jobs:
           from datetime import datetime, timezone
 
           username = "MuthairSyed"
+
           token = os.environ["GH_TOKEN"]
 
           headers = {
@@ -36,16 +39,18 @@ jobs:
           }
 
           def github_api(url):
-              request = urllib.request.Request(url, headers=headers)
+              request = urllib.request.Request(
+                  url,
+                  headers=headers
+              )
+
               with urllib.request.urlopen(request) as response:
                   return json.load(response)
 
-          # User information
           user = github_api(
               f"https://api.github.com/users/{username}"
           )
 
-          # All public repositories
           repositories = []
           page = 1
 
@@ -61,7 +66,6 @@ jobs:
               repositories.extend(data)
               page += 1
 
-          # Calculate repository statistics
           total_stars = sum(
               repo.get("stargazers_count", 0)
               for repo in repositories
@@ -72,19 +76,21 @@ jobs:
               for repo in repositories
           )
 
-          # Find latest repository update
-          latest_repo = max(
-              repositories,
-              key=lambda repo: repo.get("pushed_at") or ""
-          ) if repositories else None
+          latest_repo = (
+              max(
+                  repositories,
+                  key=lambda repo: repo.get("pushed_at") or ""
+              )
+              if repositories
+              else None
+          )
 
-          latest_commit = (
+          latest_activity = (
               latest_repo.get("pushed_at")
               if latest_repo
               else None
           )
 
-          # Build stats
           stats = {
               "username": username,
               "repositories": user.get("public_repos", 0),
@@ -92,8 +98,8 @@ jobs:
               "following": user.get("following", 0),
               "stars": total_stars,
               "forks": total_forks,
-              "latest_commit": latest_commit or "N/A",
-              "last_activity": latest_commit or "N/A",
+              "latest_commit": latest_activity or "N/A",
+              "last_activity": latest_activity or "N/A",
               "updated_at": datetime.now(
                   timezone.utc
               ).isoformat()
@@ -115,12 +121,17 @@ jobs:
           print(json.dumps(stats, indent=2))
           PY
 
-      - name: Commit updated statistics
+      - name: Generate Git Status SVG
+        run: |
+          python scripts/generate-git-status.py
+
+      - name: Commit updated statistics and SVG
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add data/github-stats.json
+          git add assets/git-status.svg
 
           if git diff --cached --quiet; then
             echo "No statistics changes."
