@@ -1,1 +1,514 @@
 <svg xmlns="http://www.w3.org/2000/svg"
+     width="1300"
+     height="900"
+     viewBox="0 0 1300 900">
+
+  <defs>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="100%" stop-color="#0b0d10"/>
+    </linearGradient>
+
+    <!-- Card -->
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#101318"/>
+      <stop offset="100%" stop-color="#050607"/>
+    </linearGradient>
+
+    <!-- Grid -->
+    <pattern id="grid"
+             width="45"
+             height="45"
+             patternUnits="userSpaceOnUse">
+      <path d="M45 0 L0 0 0 45"
+            fill="none"
+            stroke="#ffffff"
+            stroke-opacity="0.055"
+            stroke-width="1"/>
+    </pattern>
+
+    <!-- Glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+
+  <!-- BACKGROUND -->
+  <rect width="1300" height="900" fill="url(#bg)"/>
+  <rect width="1300" height="900" fill="url(#grid)"/>
+
+
+  <!-- HEADER -->
+
+  <text x="650"
+        y="65"
+        text-anchor="middle"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="30"
+        font-weight="bold"
+        letter-spacing="6"
+        filter="url(#glow)">
+    FEATURED PROJECTS
+  </text>
+
+  <text x="650"
+        y="95"
+        text-anchor="middle"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12"
+        letter-spacing="3">
+    // SELECTED SYSTEMS // SECURITY // AUTOMATION // DEVELOPMENT
+  </text>
+
+  <line x1="70"
+        y1="120"
+        x2="1230"
+        y2="120"
+        stroke="#ffffff"
+        stroke-opacity=".25"/>
+
+
+  <!-- ===================================================== -->
+  <!-- PROJECT 1 : AI RAM BOOSTER -->
+  <!-- ===================================================== -->
+
+  <rect x="55"
+        y="150"
+        width="585"
+        height="300"
+        rx="5"
+        fill="url(#card)"
+        stroke="#ffffff"
+        stroke-opacity=".25"/>
+
+  <!-- Corner -->
+  <path d="M55 185 V150 H90"
+        stroke="#ffffff"
+        stroke-width="2"
+        fill="none"/>
+
+  <!-- Status -->
+  <circle cx="610"
+          cy="180"
+          r="5"
+          fill="#ffffff"
+          filter="url(#glow)">
+    <animate attributeName="opacity"
+             values="1;.2;1"
+             dur="1.5s"
+             repeatCount="indefinite"/>
+  </circle>
+
+  <text x="85"
+        y="205"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="23"
+        font-weight="bold">
+    AI RAM BOOSTER
+  </text>
+
+  <text x="85"
+        y="240"
+        fill="#777777"
+        font-family="monospace"
+        font-size="11">
+    SYSTEM OPTIMIZATION / PERFORMANCE
+  </text>
+
+  <text x="85"
+        y="280"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+    Windows optimization utility focused
+  </text>
+
+  <text x="85"
+        y="303"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+    on RAM management and gaming performance.
+  </text>
+
+  <text x="85"
+        y="350"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+    [ Python ] [ JavaScript ] [ Electron ]
+  </text>
+
+  <text x="85"
+        y="375"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+    [ Node.js ] [ Windows ]
+  </text>
+
+  <text x="85"
+        y="420"
+        fill="#777777"
+        font-family="monospace"
+        font-size="11">
+    &gt; STATUS:
+  </text>
+
+  <text x="170"
+        y="420"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+    ACTIVE
+  </text>
+
+  <text x="510"
+        y="420"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+    GITHUB ↗
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- PROJECT 2 : CYBERSECURITY AUTOMATION -->
+  <!-- ===================================================== -->
+
+  <rect x="660"
+        y="150"
+        width="585"
+        height="300"
+        rx="5"
+        fill="url(#card)"
+        stroke="#ffffff"
+        stroke-opacity=".25"/>
+
+  <path d="M660 185 V150 H695"
+        stroke="#ffffff"
+        stroke-width="2"
+        fill="none"/>
+
+  <circle cx="1215"
+          cy="180"
+          r="5"
+          fill="#ffffff"
+          filter="url(#glow)">
+    <animate attributeName="opacity"
+             values="1;.2;1"
+             dur="1.3s"
+             repeatCount="indefinite"/>
+  </circle>
+
+  <text x="690"
+        y="205"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="21"
+        font-weight="bold">
+    CYBERSECURITY AUTOMATION
+  </text>
+
+  <text x="690"
+        y="240"
+        fill="#777777"
+        font-family="monospace"
+        font-size="11">
+    VULNERABILITY / SECURITY / AUTOMATION
+  </text>
+
+  <text x="690"
+        y="280"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+    Security utilities focused on vulnerability
+  </text>
+
+  <text x="690"
+        y="303"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+    management, monitoring and reporting.
+  </text>
+
+  <text x="690"
+        y="350"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+    [ Python ] [ Defender ] [ Sentinel ]
+  </text>
+
+  <text x="690"
+        y="375"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+    [ KQL ] [ Security Automation ]
+  </text>
+
+  <text x="690"
+        y="420"
+        fill="#777777"
+        font-family="monospace"
+        font-size="11">
+    &gt; STATUS:
+  </text>
+
+  <text x="775"
+        y="420"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+    ACTIVE
+  </text>
+
+  <text x="1115"
+        y="420"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+    GITHUB ↗
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- PROJECT 3 : REDDXSTORE -->
+  <!-- ===================================================== -->
+
+  <rect x="55"
+        y="485"
+        width="585"
+        height="300"
+        rx="5"
+        fill="url(#card)"
+        stroke="#ffffff"
+        stroke-opacity=".25"/>
+
+  <path d="M55 520 V485 H90"
+        stroke="#ffffff"
+        stroke-width="2"
+        fill="none"/>
+
+  <circle cx="610"
+          cy="515"
+          r="5"
+          fill="#ffffff"
+          filter="url(#glow)">
+    <animate attributeName="opacity"
+             values="1;.2;1"
+             dur="1.4s"
+             repeatCount="indefinite"/>
+  </circle>
+
+  <text x="85"
+        y="540"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="23"
+        font-weight="bold">
+    REDDXSTORE
+  </text>
+
+  <text x="85"
+        y="575"
+        fill="#777777"
+        font-family="monospace"
+        font-size="11">
+    FULL-STACK E-COMMERCE PLATFORM
+  </text>
+
+  <text x="85"
+        y="615"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+    Product management, online shopping,
+  </text>
+
+  <text x="85"
+        y="638"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+    payments and administration platform.
+  </text>
+
+  <text x="85"
+        y="685"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+    [ PHP ] [ MySQL ] [ JavaScript ]
+  </text>
+
+  <text x="85"
+        y="710"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+    [ HTML ] [ CSS ] [ Razorpay ]
+  </text>
+
+  <text x="85"
+        y="755"
+        fill="#777777"
+        font-family="monospace"
+        font-size="11">
+    &gt; STATUS:
+  </text>
+
+  <text x="170"
+        y="755"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+    ACTIVE
+  </text>
+
+  <text x="480"
+        y="755"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+    GITHUB ↗
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- PROJECT 4 : YOUTUBE PORTFOLIO -->
+  <!-- ===================================================== -->
+
+  <rect x="660"
+        y="485"
+        width="585"
+        height="300"
+        rx="5"
+        fill="url(#card)"
+        stroke="#ffffff"
+        stroke-opacity=".25"/>
+
+  <path d="M660 520 V485 H695"
+        stroke="#ffffff"
+        stroke-width="2"
+        fill="none"/>
+
+  <circle cx="1215"
+          cy="515"
+          r="5"
+          fill="#ffffff"
+          filter="url(#glow)">
+    <animate attributeName="opacity"
+             values="1;.2;1"
+             dur="1.6s"
+             repeatCount="indefinite"/>
+  </circle>
+
+  <text x="690"
+        y="540"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="23"
+        font-weight="bold">
+    YOUTUBE PORTFOLIO
+  </text>
+
+  <text x="690"
+        y="575"
+        fill="#777777"
+        font-family="monospace"
+        font-size="11">
+    GAMING / YOUTUBE / WEB EXPERIENCE
+  </text>
+
+  <text x="690"
+        y="615"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+    Interactive gaming and YouTube portfolio
+  </text>
+
+  <text x="690"
+        y="638"
+        fill="#bbbbbb"
+        font-family="monospace"
+        font-size="12">
+    featuring content and channel statistics.
+  </text>
+
+  <text x="690"
+        y="685"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+    [ PHP ] [ JavaScript ] [ HTML ] [ CSS ]
+  </text>
+
+  <text x="690"
+        y="710"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+    [ MySQL ] [ YouTube API ]
+  </text>
+
+  <text x="690"
+        y="755"
+        fill="#777777"
+        font-family="monospace"
+        font-size="11">
+    &gt; STATUS:
+  </text>
+
+  <text x="775"
+        y="755"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+    ACTIVE
+  </text>
+
+  <text x="1115"
+        y="755"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+    GITHUB ↗
+  </text>
+
+
+  <!-- FOOTER LINE -->
+
+  <line x1="70"
+        y1="825"
+        x2="1230"
+        y2="825"
+        stroke="#ffffff"
+        stroke-opacity=".18"/>
+
+  <text x="650"
+        y="855"
+        text-anchor="middle"
+        fill="#555555"
+        font-family="monospace"
+        font-size="10"
+        letter-spacing="3">
+    BUILD → SECURE → AUTOMATE → MONITOR
+  </text>
+
+</svg>
