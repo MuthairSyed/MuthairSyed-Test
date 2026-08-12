@@ -1,53 +1,89 @@
+<!-- ========================================================= -->
+<!-- HEADER -->
+<!-- ========================================================= -->
+
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/header.svg"
-    width="100%"
+    width="96%"
     alt="Muthair Syed Header"
-  >
+  />
 </p>
 
 <br>
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/about-tech.svg"
-    width="100%"
-    alt="About Me and Tech Stack"
-  >
-</p>
+
+<!-- ========================================================= -->
+<!-- ABOUT + GITHUB STATS -->
+<!-- ========================================================= -->
+
+<table align="center" width="96%" border="0">
+<tr>
+
+<td width="50%" align="center" valign="top">
+
+<img
+  src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/about.svg"
+  width="100%"
+  alt="About Muthair Syed"
+/>
+
+</td>
+
+<td width="50%" align="center" valign="top">
+
+<img
+  src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/git-status.svg"
+  width="100%"
+  alt="GitHub Stats"
+/>
+
+</td>
+
+</tr>
+</table>
 
 <br>
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/git-status.svg"
-    width="100%"
-    alt="Git Status"
-  >
-</p>
 
-<br>
+<!-- ========================================================= -->
+<!-- FEATURED PROJECTS -->
+<!-- ========================================================= -->
 
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/featured-projects.svg"
-    width="100%"
+    width="96%"
     alt="Featured Projects"
-  >
+  />
 </p>
 
 <br>
+
+
+<!-- ========================================================= -->
+<!-- TECH STACK -->
+<!-- ========================================================= -->
+
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/tech-stack.svg"
-    width="100%"
-    alt="Tech Stack"
+    width="96%"
+    alt="Technology Stack"
   />
 </p>
+
+<br>
+
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/footer.svg"
-    width="100%"
-    alt="Muthair Syed Footer"
-  >
+    width="96%"
+    alt="Footer"
+  />
 </p>
