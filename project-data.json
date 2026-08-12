@@ -2,40 +2,40 @@
   "projects": [
     {
       "name": "AI RAM Booster",
-      "github": "https://github.com/MuthairSyed/AI-Ram-Booster",
-      "live_demo": null,
       "description": "",
       "technologies": [],
+      "github": "https://github.com/MuthairSyed/AI-Ram-Booster",
+      "live_demo": null,
       "status": "",
       "last_updated": "AUTO",
       "icon": "RAM"
     },
     {
       "name": "Cybersecurity Automation",
-      "github": "https://github.com/MuthairSyed/vulnerbility-dashboard",
-      "live_demo": null,
       "description": "",
       "technologies": [],
+      "github": "https://github.com/MuthairSyed/MuthairSyed",
+      "live_demo": null,
       "status": "",
       "last_updated": "AUTO",
       "icon": "SEC"
     },
     {
       "name": "ReDDxStore",
-      "github": "https://github.com/MuthairSyed/ReDDxStore",
-      "live_demo": "https://reddxstore.page.gd/",
       "description": "",
       "technologies": [],
+      "github": "https://github.com/MuthairSyed/ReDDxStore",
+      "live_demo": "https://reddxstore.page.gd/",
       "status": "",
       "last_updated": "AUTO",
       "icon": "WEB"
     },
     {
       "name": "YouTube Portfolio",
-      "github": "https://github.com/MuthairSyed/Youtube-Portfolio",
-      "live_demo": "http://auroraxyt.gamer.gd/",
       "description": "",
       "technologies": [],
+      "github": "https://github.com/MuthairSyed/Youtube-Portfolio",
+      "live_demo": "http://auroraxyt.gamer.gd/",
       "status": "",
       "last_updated": "AUTO",
       "icon": "YT"
