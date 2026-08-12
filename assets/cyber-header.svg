@@ -1,1 +1,539 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1400"
+     height="430"
+     viewBox="0 0 1400 430">
 
+  <defs>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="50%" stop-color="#0A0A0A"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+
+    <!-- Grid -->
+    <pattern id="grid"
+             width="70"
+             height="42"
+             patternUnits="userSpaceOnUse">
+      <path d="M70 0H0V42"
+            fill="none"
+            stroke="#181818"
+            stroke-width="1"/>
+    </pattern>
+
+    <!-- Glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Strong glow -->
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Title clipping -->
+    <clipPath id="titleClip">
+      <rect x="350" y="105" width="700" height="90"/>
+    </clipPath>
+
+  </defs>
+
+
+  <!-- ================================= -->
+  <!-- BACKGROUND                         -->
+  <!-- ================================= -->
+
+  <rect width="1400"
+        height="430"
+        fill="url(#bg)"/>
+
+  <rect width="1400"
+        height="430"
+        fill="url(#grid)"/>
+
+
+  <!-- ================================= -->
+  <!-- MOVING PARTICLES                   -->
+  <!-- ================================= -->
+
+  <g fill="#FFFFFF">
+
+    <circle cx="90" cy="80" r="2">
+      <animate attributeName="cx"
+               values="90;180;90"
+               dur="8s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cy"
+               values="80;140;80"
+               dur="10s"
+               repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+               values=".15;.9;.15"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="190" cy="300" r="1.5">
+      <animate attributeName="cx"
+               values="190;100;190"
+               dur="9s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cy"
+               values="300;250;300"
+               dur="7s"
+               repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+               values=".1;.8;.1"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="310" cy="65" r="2">
+      <animate attributeName="cx"
+               values="310;420;310"
+               dur="7s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cy"
+               values="65;110;65"
+               dur="8s"
+               repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+               values=".2;1;.2"
+               dur="2.5s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1080" cy="90" r="2">
+      <animate attributeName="cx"
+               values="1080;1180;1080"
+               dur="9s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cy"
+               values="90;45;90"
+               dur="8s"
+               repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+               values=".15;.9;.15"
+               dur="3.5s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1220" cy="260" r="1.5">
+      <animate attributeName="cx"
+               values="1220;1300;1220"
+               dur="7s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cy"
+               values="260;320;260"
+               dur="9s"
+               repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+               values=".1;.8;.1"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1150" cy="360" r="2">
+      <animate attributeName="cx"
+               values="1150;1050;1150"
+               dur="10s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cy"
+               values="360;320;360"
+               dur="8s"
+               repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+               values=".2;1;.2"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="350" cy="350" r="1.5">
+      <animate attributeName="cx"
+               values="350;280;350"
+               dur="8s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cy"
+               values="350;390;350"
+               dur="9s"
+               repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+               values=".15;.8;.15"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="650" cy="45" r="1.5">
+      <animate attributeName="cy"
+               values="45;90;45"
+               dur="6s"
+               repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+               values=".1;1;.1"
+               dur="2s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="760" cy="390" r="2">
+      <animate attributeName="cy"
+               values="390;330;390"
+               dur="8s"
+               repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+               values=".2;.9;.2"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </circle>
+
+  </g>
+
+
+  <!-- ================================= -->
+  <!-- PARTICLE NETWORK                   -->
+  <!-- ================================= -->
+
+  <g stroke="#FFFFFF"
+     stroke-width="1"
+     opacity=".18">
+
+    <path d="M90 80 L310 65 L430 120">
+      <animate attributeName="opacity"
+               values=".05;.4;.05"
+               dur="5s"
+               repeatCount="indefinite"/>
+    </path>
+
+    <path d="M1080 90 L1180 150 L1220 260">
+      <animate attributeName="opacity"
+               values=".4;.05;.4"
+               dur="6s"
+               repeatCount="indefinite"/>
+    </path>
+
+    <path d="M350 350 L500 320 L650 390">
+      <animate attributeName="opacity"
+               values=".05;.35;.05"
+               dur="7s"
+               repeatCount="indefinite"/>
+    </path>
+
+  </g>
+
+
+  <!-- ================================= -->
+  <!-- SCANNING LINE                      -->
+  <!-- ================================= -->
+
+  <rect x="0"
+        y="0"
+        width="1400"
+        height="2"
+        fill="#FFFFFF"
+        opacity=".35">
+
+    <animate attributeName="y"
+             values="0;430;0"
+             dur="5s"
+             repeatCount="indefinite"/>
+
+  </rect>
+
+
+  <!-- ================================= -->
+  <!-- HUD FRAME                          -->
+  <!-- ================================= -->
+
+  <rect x="260"
+        y="55"
+        width="880"
+        height="320"
+        rx="4"
+        fill="none"
+        stroke="#303030"
+        stroke-width="1"/>
+
+  <!-- HUD corners -->
+
+  <path d="M260 95V55H310"
+        stroke="#FFFFFF"
+        stroke-width="2"
+        fill="none"/>
+
+  <path d="M1090 55H1140V95"
+        stroke="#FFFFFF"
+        stroke-width="2"
+        fill="none"/>
+
+  <path d="M260 335V375H310"
+        stroke="#FFFFFF"
+        stroke-width="2"
+        fill="none"/>
+
+  <path d="M1090 375H1140V335"
+        stroke="#FFFFFF"
+        stroke-width="2"
+        fill="none"/>
+
+
+  <!-- ================================= -->
+  <!-- MAIN NAME                          -->
+  <!-- ================================= -->
+
+  <g clip-path="url(#titleClip)"
+     font-family="monospace"
+     font-weight="700"
+     font-size="64"
+     text-anchor="middle">
+
+    <!-- Main title -->
+
+    <text x="700"
+          y="180"
+          fill="#FFFFFF">
+      MUTHAIR SYED
+    </text>
+
+
+    <!-- Glitch layer -->
+
+    <text x="700"
+          y="180"
+          fill="#FFFFFF"
+          opacity=".55">
+
+      MUTHAIR SYED
+
+      <animate attributeName="x"
+               values="700;708;694;700;700"
+               dur="2.7s"
+               repeatCount="indefinite"/>
+
+      <animate attributeName="opacity"
+               values=".15;.7;.15;.55"
+               dur="2.7s"
+               repeatCount="indefinite"/>
+
+    </text>
+
+
+    <!-- Glitch slice -->
+
+    <rect x="400"
+          y="135"
+          width="600"
+          height="5"
+          fill="#FFFFFF"
+          opacity="0">
+
+      <animate attributeName="opacity"
+               values="0;0;1;0;0"
+               dur="2.7s"
+               repeatCount="indefinite"/>
+
+      <animate attributeName="x"
+               values="400;760;500;400"
+               dur="2.7s"
+               repeatCount="indefinite"/>
+
+    </rect>
+
+  </g>
+
+
+  <!-- ================================= -->
+  <!-- ROLE TEXT                          -->
+  <!-- ================================= -->
+
+  <g font-family="monospace"
+     font-size="19"
+     text-anchor="middle"
+     fill="#D8D8D8">
+
+    <text x="700"
+          y="225">
+
+      [ DEVSECOPS ]
+
+      <animate attributeName="opacity"
+               values="1;1;.25;1;1"
+               dur="4.2s"
+               repeatCount="indefinite"/>
+
+    </text>
+
+    <text x="700"
+          y="252">
+
+      [ CYBERSECURITY ]
+
+      <animate attributeName="opacity"
+               values="1;.25;1;1;.5;1"
+               dur="5.1s"
+               repeatCount="indefinite"/>
+
+    </text>
+
+    <text x="700"
+          y="279">
+
+      [ AUTOMATION ]
+
+      <animate attributeName="opacity"
+               values=".4;1;1;.3;1"
+               dur="4.7s"
+               repeatCount="indefinite"/>
+
+    </text>
+
+  </g>
+
+
+  <!-- ================================= -->
+  <!-- TERMINAL STATUS                    -->
+  <!-- ================================= -->
+
+  <g font-family="monospace"
+     font-size="14"
+     text-anchor="middle">
+
+    <text x="700"
+          y="318"
+          fill="#FFFFFF">
+
+      &gt; SYSTEM STATUS: OPERATIONAL
+
+      <animate attributeName="opacity"
+               values="1;1;.3;1"
+               dur="3.5s"
+               repeatCount="indefinite"/>
+
+    </text>
+
+
+    <text x="700"
+          y="342"
+          fill="#AAAAAA">
+
+      &gt; THREAT MONITORING: ACTIVE
+
+      <animate attributeName="opacity"
+               values=".3;1;.3;1"
+               dur="4.5s"
+               repeatCount="indefinite"/>
+
+    </text>
+
+  </g>
+
+
+  <!-- ================================= -->
+  <!-- SIGNAL INDICATORS                  -->
+  <!-- ================================= -->
+
+  <circle cx="420"
+          cy="318"
+          r="4"
+          fill="#FFFFFF"
+          filter="url(#glow)">
+
+    <animate attributeName="opacity"
+             values=".2;1;.2"
+             dur="1.6s"
+             repeatCount="indefinite"/>
+
+  </circle>
+
+
+  <circle cx="980"
+          cy="342"
+          r="4"
+          fill="#FFFFFF"
+          filter="url(#glow)">
+
+    <animate attributeName="opacity"
+             values="1;.2;1"
+             dur="2.1s"
+             repeatCount="indefinite"/>
+
+  </circle>
+
+
+  <!-- ================================= -->
+  <!-- RANDOM GLITCH BARS                 -->
+  <!-- ================================= -->
+
+  <g fill="#FFFFFF">
+
+    <rect x="320"
+          y="115"
+          width="65"
+          height="3"
+          opacity="0">
+
+      <animate attributeName="opacity"
+               values="0;0;0.7;0;0"
+               dur="3.8s"
+               repeatCount="indefinite"/>
+
+    </rect>
+
+    <rect x="1010"
+          y="190"
+          width="55"
+          height="2"
+          opacity="0">
+
+      <animate attributeName="opacity"
+               values="0;.8;0;0"
+               dur="4.3s"
+               repeatCount="indefinite"/>
+
+    </rect>
+
+    <rect x="300"
+          y="300"
+          width="80"
+          height="2"
+          opacity="0">
+
+      <animate attributeName="opacity"
+               values="0;0;.7;0"
+               dur="5.4s"
+               repeatCount="indefinite"/>
+
+    </rect>
+
+  </g>
+
+
+  <!-- ================================= -->
+  <!-- BOTTOM TERMINAL LINE               -->
+  <!-- ================================= -->
+
+  <text x="700"
+        y="405"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12"
+        text-anchor="middle">
+
+    BUILD → SECURE → AUTOMATE → MONITOR
+
+    <animate attributeName="opacity"
+             values=".45;1;.45"
+             dur="4s"
+             repeatCount="indefinite"/>
+
+  </text>
+
+</svg>
