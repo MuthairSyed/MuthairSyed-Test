@@ -4,7 +4,7 @@
 
 <p align="center">
   <img
-    src="./assets/cyber-header.svg"
+    src="./assets/header.svg"
     width="100%"
     alt="Muthair Syed Cybersecurity Header"
   />
@@ -38,3 +38,4 @@
 <p align="center">
   <img src="./assets/featured-projects.svg" width="100%" alt="Featured Projects">
 </p>
+<img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/footer.svg" width="100%">
