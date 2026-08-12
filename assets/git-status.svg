@@ -5,49 +5,65 @@
 
   <defs>
 
+    <!-- Background -->
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#000000"/>
       <stop offset="100%" stop-color="#0b0d10"/>
     </linearGradient>
 
+    <!-- Panels -->
     <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#111419"/>
       <stop offset="100%" stop-color="#050607"/>
     </linearGradient>
 
+    <!-- Grid -->
     <pattern id="grid"
              width="45"
              height="45"
              patternUnits="userSpaceOnUse">
+
       <path d="M45 0H0V45"
             fill="none"
             stroke="#ffffff"
             stroke-opacity=".05"
             stroke-width="1"/>
+
     </pattern>
 
+    <!-- Scanlines -->
     <pattern id="scan"
              width="1"
              height="8"
              patternUnits="userSpaceOnUse">
+
       <rect width="1"
             height="1"
             fill="#ffffff"
             opacity=".025"/>
+
     </pattern>
 
+    <!-- Glow -->
     <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+
+      <feGaussianBlur
+        stdDeviation="3"
+        result="blur"/>
+
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
+
     </filter>
 
   </defs>
 
 
-  <!-- BACKGROUND -->
+  <!-- ========================================================= -->
+  <!-- BACKGROUND                                                -->
+  <!-- ========================================================= -->
 
   <rect width="1300"
         height="560"
@@ -62,84 +78,127 @@
         fill="url(#scan)"/>
 
 
-  <!-- PARTICLES -->
+  <!-- ========================================================= -->
+  <!-- MOVING PARTICLES                                          -->
+  <!-- ========================================================= -->
 
   <g fill="#ffffff">
 
     <circle cx="70" cy="80" r="2">
-      <animate attributeName="opacity"
-               values=".1;.9;.1"
-               dur="3s"
-               repeatCount="indefinite"/>
+
+      <animate
+        attributeName="opacity"
+        values=".1;.9;.1"
+        dur="3s"
+        repeatCount="indefinite"/>
+
     </circle>
+
 
     <circle cx="210" cy="130" r="1.5">
-      <animate attributeName="cy"
-               values="130;150;130"
-               dur="4s"
-               repeatCount="indefinite"/>
+
+      <animate
+        attributeName="cy"
+        values="130;150;130"
+        dur="4s"
+        repeatCount="indefinite"/>
+
     </circle>
+
 
     <circle cx="430" cy="70" r="2">
-      <animate attributeName="opacity"
-               values=".1;1;.1"
-               dur="2.7s"
-               repeatCount="indefinite"/>
+
+      <animate
+        attributeName="opacity"
+        values=".1;1;.1"
+        dur="2.7s"
+        repeatCount="indefinite"/>
+
     </circle>
+
 
     <circle cx="700" cy="115" r="1.5">
-      <animate attributeName="cy"
-               values="115;135;115"
-               dur="3.6s"
-               repeatCount="indefinite"/>
+
+      <animate
+        attributeName="cy"
+        values="115;135;115"
+        dur="3.6s"
+        repeatCount="indefinite"/>
+
     </circle>
+
 
     <circle cx="950" cy="75" r="2">
-      <animate attributeName="opacity"
-               values=".2;1;.2"
-               dur="3s"
-               repeatCount="indefinite"/>
+
+      <animate
+        attributeName="opacity"
+        values=".2;1;.2"
+        dur="3s"
+        repeatCount="indefinite"/>
+
     </circle>
+
 
     <circle cx="1190" cy="135" r="1.5">
-      <animate attributeName="opacity"
-               values=".1;.8;.1"
-               dur="3.5s"
-               repeatCount="indefinite"/>
+
+      <animate
+        attributeName="opacity"
+        values=".1;.8;.1"
+        dur="3.5s"
+        repeatCount="indefinite"/>
+
     </circle>
+
 
     <circle cx="110" cy="470" r="2">
-      <animate attributeName="cy"
-               values="470;450;470"
-               dur="4s"
-               repeatCount="indefinite"/>
+
+      <animate
+        attributeName="cy"
+        values="470;450;470"
+        dur="4s"
+        repeatCount="indefinite"/>
+
     </circle>
+
 
     <circle cx="380" cy="500" r="1.5">
-      <animate attributeName="opacity"
-               values=".2;1;.2"
-               dur="3s"
-               repeatCount="indefinite"/>
+
+      <animate
+        attributeName="opacity"
+        values=".2;1;.2"
+        dur="3s"
+        repeatCount="indefinite"/>
+
     </circle>
+
 
     <circle cx="760" cy="470" r="2">
-      <animate attributeName="cy"
-               values="470;490;470"
-               dur="3.7s"
-               repeatCount="indefinite"/>
+
+      <animate
+        attributeName="cy"
+        values="470;490;470"
+        dur="3.7s"
+        repeatCount="indefinite"/>
+
     </circle>
 
+
     <circle cx="1120" cy="500" r="1.5">
-      <animate attributeName="opacity"
-               values=".1;.9;.1"
-               dur="2.8s"
-               repeatCount="indefinite"/>
+
+      <animate
+        attributeName="opacity"
+        values=".1;.9;.1"
+        dur="2.8s"
+        repeatCount="indefinite"/>
+
     </circle>
 
   </g>
 
 
-  <!-- TITLE -->
+  <!-- ========================================================= -->
+  <!-- TITLE                                                      -->
+  <!-- ========================================================= -->
 
   <text x="650"
         y="58"
@@ -153,12 +212,14 @@
 
     GIT_STATUS.exe
 
-    <animate attributeName="opacity"
-             values="1;.55;1"
-             dur="3s"
-             repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="1;.55;1"
+      dur="3s"
+      repeatCount="indefinite"/>
 
   </text>
+
 
   <text x="650"
         y="86"
@@ -173,7 +234,9 @@
   </text>
 
 
-  <!-- STATUS -->
+  <!-- ========================================================= -->
+  <!-- ONLINE STATUS                                              -->
+  <!-- ========================================================= -->
 
   <circle cx="1140"
           cy="58"
@@ -181,12 +244,14 @@
           fill="#ffffff"
           filter="url(#glow)">
 
-    <animate attributeName="opacity"
-             values="1;.2;1"
-             dur="1.3s"
-             repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="1;.2;1"
+      dur="1.3s"
+      repeatCount="indefinite"/>
 
   </circle>
+
 
   <text x="1155"
         y="63"
@@ -199,7 +264,9 @@
   </text>
 
 
-  <!-- MAIN PANEL -->
+  <!-- ========================================================= -->
+  <!-- MAIN PANEL                                                 -->
+  <!-- ========================================================= -->
 
   <rect x="55"
         y="115"
@@ -211,10 +278,13 @@
         stroke-opacity=".25"/>
 
 
+  <!-- HUD CORNERS -->
+
   <path d="M55 155V115H95"
         stroke="#ffffff"
         stroke-width="2"
         fill="none"/>
+
 
   <path d="M1205 465H1245V425"
         stroke="#ffffff"
@@ -222,7 +292,9 @@
         fill="none"/>
 
 
-  <!-- LEFT STATUS -->
+  <!-- ========================================================= -->
+  <!-- REPOSITORIES                                               -->
+  <!-- ========================================================= -->
 
   <text x="85"
         y="160"
@@ -234,6 +306,7 @@
 
   </text>
 
+
   <text x="300"
         y="160"
         fill="#ffffff"
@@ -241,9 +314,10 @@
         font-size="18"
         font-weight="bold">
 
-    15
+    <!-- GITHUB_REPOSITORIES -->
 
   </text>
+
 
   <text x="350"
         y="160"
@@ -256,26 +330,36 @@
   </text>
 
 
+  <!-- ========================================================= -->
+  <!-- FOLLOWERS                                                  -->
+  <!-- ========================================================= -->
+
   <text x="85"
         y="200"
         fill="#777777"
         font-family="monospace"
         font-size="12">
 
-    &gt; GITHUB
+    &gt; FOLLOWERS
 
   </text>
+
 
   <text x="300"
         y="200"
         fill="#ffffff"
         font-family="monospace"
-        font-size="12">
+        font-size="15"
+        font-weight="bold">
 
-    ACTIVE
+    <!-- GITHUB_FOLLOWERS -->
 
   </text>
 
+
+  <!-- ========================================================= -->
+  <!-- FOLLOWING                                                  -->
+  <!-- ========================================================= -->
 
   <text x="85"
         y="240"
@@ -283,25 +367,26 @@
         font-family="monospace"
         font-size="12">
 
-    &gt; VERSION_CONTROL
+    &gt; FOLLOWING
 
   </text>
+
 
   <text x="300"
         y="240"
         fill="#ffffff"
         font-family="monospace"
-        font-size="12">
+        font-size="15"
+        font-weight="bold">
 
-    OPERATIONAL
-
-    <animate attributeName="opacity"
-             values="1;.4;1"
-             dur="2s"
-             repeatCount="indefinite"/>
+    <!-- GITHUB_FOLLOWING -->
 
   </text>
 
+
+  <!-- ========================================================= -->
+  <!-- STARS                                                      -->
+  <!-- ========================================================= -->
 
   <text x="85"
         y="280"
@@ -309,23 +394,56 @@
         font-family="monospace"
         font-size="12">
 
-    &gt; AUTOMATION
+    &gt; TOTAL_STARS
 
   </text>
+
 
   <text x="300"
         y="280"
         fill="#ffffff"
         font-family="monospace"
-        font-size="12">
+        font-size="15"
+        font-weight="bold">
 
-    ENABLED
+    <!-- GITHUB_STARS -->
 
   </text>
 
+
+  <!-- ========================================================= -->
+  <!-- FORKS                                                      -->
+  <!-- ========================================================= -->
 
   <text x="85"
         y="320"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; TOTAL_FORKS
+
+  </text>
+
+
+  <text x="300"
+        y="320"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="15"
+        font-weight="bold">
+
+    <!-- GITHUB_FORKS -->
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- DATA SOURCE                                                -->
+  <!-- ========================================================= -->
+
+  <text x="85"
+        y="360"
         fill="#777777"
         font-family="monospace"
         font-size="12">
@@ -334,8 +452,9 @@
 
   </text>
 
+
   <text x="300"
-        y="320"
+        y="360"
         fill="#ffffff"
         font-family="monospace"
         font-size="12">
@@ -345,7 +464,9 @@
   </text>
 
 
-  <!-- DIVIDER -->
+  <!-- ========================================================= -->
+  <!-- DIVIDER                                                    -->
+  <!-- ========================================================= -->
 
   <line x1="520"
         y1="145"
@@ -355,7 +476,9 @@
         stroke-opacity=".12"/>
 
 
-  <!-- CONTRIBUTION MATRIX -->
+  <!-- ========================================================= -->
+  <!-- ACTIVITY                                                   -->
+  <!-- ========================================================= -->
 
   <text x="565"
         y="160"
@@ -364,9 +487,10 @@
         font-size="15"
         font-weight="bold">
 
-    CONTRIBUTION_ACTIVITY
+    GITHUB_ACTIVITY
 
   </text>
+
 
   <text x="565"
         y="185"
@@ -374,129 +498,145 @@
         font-family="monospace"
         font-size="10">
 
-    // ACTIVITY MATRIX //
+    // LIVE REPOSITORY ACTIVITY //
 
   </text>
 
 
-  <!-- MATRIX -->
+  <!-- ========================================================= -->
+  <!-- LATEST COMMIT                                              -->
+  <!-- ========================================================= -->
 
-  <g transform="translate(565,210)">
+  <text x="565"
+        y="220"
+        fill="#777777"
+        font-family="monospace"
+        font-size="11">
 
-    <!-- Row 1 -->
+    &gt; LATEST_COMMIT
 
-    <rect x="0" y="0" width="14" height="14" fill="#222"/>
-    <rect x="20" y="0" width="14" height="14" fill="#444"/>
-    <rect x="40" y="0" width="14" height="14" fill="#777"/>
-    <rect x="60" y="0" width="14" height="14" fill="#222"/>
-    <rect x="80" y="0" width="14" height="14" fill="#ffffff"/>
-    <rect x="100" y="0" width="14" height="14" fill="#444"/>
-    <rect x="120" y="0" width="14" height="14" fill="#222"/>
-    <rect x="140" y="0" width="14" height="14" fill="#777"/>
-    <rect x="160" y="0" width="14" height="14" fill="#ffffff"/>
-    <rect x="180" y="0" width="14" height="14" fill="#444"/>
-    <rect x="200" y="0" width="14" height="14" fill="#222"/>
-    <rect x="220" y="0" width="14" height="14" fill="#777"/>
-    <rect x="240" y="0" width="14" height="14" fill="#ffffff"/>
-    <rect x="260" y="0" width="14" height="14" fill="#444"/>
-    <rect x="280" y="0" width="14" height="14" fill="#222"/>
-
-    <!-- Row 2 -->
-
-    <rect x="0" y="20" width="14" height="14" fill="#777"/>
-    <rect x="20" y="20" width="14" height="14" fill="#ffffff"/>
-    <rect x="40" y="20" width="14" height="14" fill="#222"/>
-    <rect x="60" y="20" width="14" height="14" fill="#444"/>
-    <rect x="80" y="20" width="14" height="14" fill="#777"/>
-    <rect x="100" y="20" width="14" height="14" fill="#ffffff"/>
-    <rect x="120" y="20" width="14" height="14" fill="#222"/>
-    <rect x="140" y="20" width="14" height="14" fill="#444"/>
-    <rect x="160" y="20" width="14" height="14" fill="#777"/>
-    <rect x="180" y="20" width="14" height="14" fill="#ffffff"/>
-    <rect x="200" y="20" width="14" height="14" fill="#222"/>
-    <rect x="220" y="20" width="14" height="14" fill="#444"/>
-    <rect x="240" y="20" width="14" height="14" fill="#777"/>
-    <rect x="260" y="20" width="14" height="14" fill="#ffffff"/>
-    <rect x="280" y="20" width="14" height="14" fill="#222"/>
-
-    <!-- Row 3 -->
-
-    <rect x="0" y="40" width="14" height="14" fill="#222"/>
-    <rect x="20" y="40" width="14" height="14" fill="#777"/>
-    <rect x="40" y="40" width="14" height="14" fill="#ffffff"/>
-    <rect x="60" y="40" width="14" height="14" fill="#444"/>
-    <rect x="80" y="40" width="14" height="14" fill="#222"/>
-    <rect x="100" y="40" width="14" height="14" fill="#777"/>
-    <rect x="120" y="40" width="14" height="14" fill="#ffffff"/>
-    <rect x="140" y="40" width="14" height="14" fill="#444"/>
-    <rect x="160" y="40" width="14" height="14" fill="#222"/>
-    <rect x="180" y="40" width="14" height="14" fill="#777"/>
-    <rect x="200" y="40" width="14" height="14" fill="#ffffff"/>
-    <rect x="220" y="40" width="14" height="14" fill="#444"/>
-    <rect x="240" y="40" width="14" height="14" fill="#222"/>
-    <rect x="260" y="40" width="14" height="14" fill="#777"/>
-    <rect x="280" y="40" width="14" height="14" fill="#ffffff"/>
-
-    <!-- Row 4 -->
-
-    <rect x="0" y="60" width="14" height="14" fill="#444"/>
-    <rect x="20" y="60" width="14" height="14" fill="#222"/>
-    <rect x="40" y="60" width="14" height="14" fill="#777"/>
-    <rect x="60" y="60" width="14" height="14" fill="#ffffff"/>
-    <rect x="80" y="60" width="14" height="14" fill="#444"/>
-    <rect x="100" y="60" width="14" height="14" fill="#222"/>
-    <rect x="120" y="60" width="14" height="14" fill="#777"/>
-    <rect x="140" y="60" width="14" height="14" fill="#ffffff"/>
-    <rect x="160" y="60" width="14" height="14" fill="#444"/>
-    <rect x="180" y="60" width="14" height="14" fill="#222"/>
-    <rect x="200" y="60" width="14" height="14" fill="#777"/>
-    <rect x="220" y="60" width="14" height="14" fill="#ffffff"/>
-    <rect x="240" y="60" width="14" height="14" fill="#444"/>
-    <rect x="260" y="60" width="14" height="14" fill="#222"/>
-    <rect x="280" y="60" width="14" height="14" fill="#777"/>
-
-    <!-- Row 5 -->
-
-    <rect x="0" y="80" width="14" height="14" fill="#ffffff"/>
-    <rect x="20" y="80" width="14" height="14" fill="#444"/>
-    <rect x="40" y="80" width="14" height="14" fill="#222"/>
-    <rect x="60" y="80" width="14" height="14" fill="#777"/>
-    <rect x="80" y="80" width="14" height="14" fill="#ffffff"/>
-    <rect x="100" y="80" width="14" height="14" fill="#444"/>
-    <rect x="120" y="80" width="14" height="14" fill="#222"/>
-    <rect x="140" y="80" width="14" height="14" fill="#777"/>
-    <rect x="160" y="80" width="14" height="14" fill="#ffffff"/>
-    <rect x="180" y="80" width="14" height="14" fill="#444"/>
-    <rect x="200" y="80" width="14" height="14" fill="#222"/>
-    <rect x="220" y="80" width="14" height="14" fill="#777"/>
-    <rect x="240" y="80" width="14" height="14" fill="#ffffff"/>
-    <rect x="260" y="80" width="14" height="14" fill="#444"/>
-    <rect x="280" y="80" width="14" height="14" fill="#222"/>
-
-  </g>
+  </text>
 
 
-  <!-- ANIMATED SCAN -->
+  <text x="565"
+        y="245"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12">
+
+    <!-- GITHUB_LATEST_COMMIT -->
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- LAST ACTIVITY                                              -->
+  <!-- ========================================================= -->
+
+  <text x="565"
+        y="280"
+        fill="#777777"
+        font-family="monospace"
+        font-size="11">
+
+    &gt; LAST_ACTIVITY
+
+  </text>
+
+
+  <text x="565"
+        y="305"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12">
+
+    <!-- GITHUB_LAST_ACTIVITY -->
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- UPDATED                                                    -->
+  <!-- ========================================================= -->
+
+  <text x="565"
+        y="340"
+        fill="#777777"
+        font-family="monospace"
+        font-size="11">
+
+    &gt; DATA_UPDATED
+
+  </text>
+
+
+  <text x="565"
+        y="365"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="12">
+
+    <!-- GITHUB_UPDATED -->
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- LIVE INDICATOR                                             -->
+  <!-- ========================================================= -->
+
+  <circle cx="570"
+          cy="405"
+          r="4"
+          fill="#ffffff"
+          filter="url(#glow)">
+
+    <animate
+      attributeName="opacity"
+      values="1;.2;1"
+      dur="1.5s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+
+  <text x="585"
+        y="410"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="11">
+
+    LIVE DATA PIPELINE ACTIVE
+
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- SCANNING LINE                                              -->
+  <!-- ========================================================= -->
 
   <rect x="560"
         y="205"
         width="310"
-        height="4"
+        height="3"
         fill="#ffffff"
         opacity=".08">
 
-    <animate attributeName="y"
-             values="205;305;405;205"
-             dur="4s"
-             repeatCount="indefinite"/>
+    <animate
+      attributeName="y"
+      values="205;305;405;205"
+      dur="4s"
+      repeatCount="indefinite"/>
 
   </rect>
 
 
-  <!-- GIT COMMAND -->
+  <!-- ========================================================= -->
+  <!-- GIT COMMAND                                                -->
+  <!-- ========================================================= -->
 
-  <text x="565"
-        y="345"
+  <text x="85"
+        y="410"
         fill="#777777"
         font-family="monospace"
         font-size="11">
@@ -505,38 +645,21 @@
 
   </text>
 
-  <text x="565"
-        y="370"
+
+  <text x="185"
+        y="410"
         fill="#ffffff"
         font-family="monospace"
-        font-size="12">
+        font-size="11">
 
     working tree clean
 
   </text>
 
-  <text x="565"
-        y="398"
-        fill="#777777"
-        font-family="monospace"
-        font-size="11">
 
-    &gt; branch:
-
-  </text>
-
-  <text x="650"
-        y="398"
-        fill="#ffffff"
-        font-family="monospace"
-        font-size="11">
-
-    main
-
-  </text>
-
-
-  <!-- FOOTER STATUS -->
+  <!-- ========================================================= -->
+  <!-- BOTTOM STATUS                                              -->
+  <!-- ========================================================= -->
 
   <line x1="85"
         y1="425"
@@ -544,6 +667,7 @@
         y2="425"
         stroke="#ffffff"
         stroke-opacity=".12"/>
+
 
   <text x="85"
         y="450"
@@ -555,6 +679,7 @@
 
   </text>
 
+
   <text x="165"
         y="450"
         fill="#ffffff"
@@ -564,6 +689,7 @@
     OPERATIONAL
 
   </text>
+
 
   <text x="440"
         y="450"
@@ -575,6 +701,7 @@
 
   </text>
 
+
   <text x="545"
         y="450"
         fill="#ffffff"
@@ -585,6 +712,7 @@
 
   </text>
 
+
   <text x="760"
         y="450"
         fill="#777777"
@@ -594,6 +722,7 @@
     &gt; SOURCE:
 
   </text>
+
 
   <text x="840"
         y="450"
@@ -606,7 +735,9 @@
   </text>
 
 
-  <!-- CURSOR -->
+  <!-- ========================================================= -->
+  <!-- TERMINAL CURSOR                                           -->
+  <!-- ========================================================= -->
 
   <text x="85"
         y="505"
@@ -616,15 +747,18 @@
 
     &gt; GIT_STATUS_READY_
 
-    <animate attributeName="opacity"
-             values="1;0;1"
-             dur="1s"
-             repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="1;0;1"
+      dur="1s"
+      repeatCount="indefinite"/>
 
   </text>
 
 
-  <!-- BOTTOM -->
+  <!-- ========================================================= -->
+  <!-- FOOTER                                                     -->
+  <!-- ========================================================= -->
 
   <text x="650"
         y="535"
