@@ -1,86 +1,28 @@
-<table align="center" width="900" cellpadding="0" cellspacing="0" border="0">
+<p align="center"><img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/header.svg" width="100%" alt="Muthair Syed Header"></p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr>
-<td colspan="2" align="center">
-
-<h2>FEATURED PROJECTS</h2>
-<p><code>// SELECTED SYSTEMS // SECURITY // AUTOMATION // DEVELOPMENT</code></p>
-
-</td>
-</tr>
-
-<tr>
-
-<td width="50%" valign="top" align="center">
-
-<a href="https://github.com/MuthairSyed/AI-Ram-Booster">
-<img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/ai-ram-booster.svg" width="440" alt="AI RAM Booster">
-</a>
-
-<br>
-
-<a href="https://github.com/MuthairSyed/AI-Ram-Booster">
-<strong>GITHUB ↗</strong>
-</a>
-
-</td>
-
-<td width="50%" valign="top" align="center">
-
-<a href="https://github.com/MuthairSyed/MuthairSyed">
-<img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/cybersecurity.svg" width="440" alt="Cybersecurity Automation">
-</a>
-
-<br>
-
-<a href="https://github.com/MuthairSyed/MuthairSyed">
-<strong>GITHUB ↗</strong>
-</a>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="50%" valign="top" align="center">
-
-<a href="https://github.com/MuthairSyed/ReDDxStore">
-<img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/reddxstore.svg" width="440" alt="ReDDxStore">
-</a>
-
-<br>
-
-<a href="https://github.com/MuthairSyed/ReDDxStore">
-<strong>GITHUB ↗</strong>
-</a>
-
-&nbsp;&nbsp;&nbsp;
-
-<a href="https://reddxstore.page.gd/">
-<strong>LIVE ↗</strong>
-</a>
-
-</td>
-
-<td width="50%" valign="top" align="center">
-
-<a href="https://github.com/MuthairSyed/Youtube-Portfolio">
-<img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/youtube-portfolio.svg" width="440" alt="YouTube Portfolio">
-</a>
-
-<br>
-
-<a href="https://github.com/MuthairSyed/Youtube-Portfolio">
-<strong>GITHUB ↗</strong>
-</a>
-
-&nbsp;&nbsp;&nbsp;
-
-<a href="http://auroraxyt.gamer.gd/">
-<strong>LIVE ↗</strong>
-</a>
-
-</td>
-
+<td width="50%" valign="top"><img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/about.svg" width="100%" alt="About Muthair Syed"></td>
+<td width="50%" valign="top"><img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/git-status.svg" width="100%" alt="Git Status"></td>
 </tr>
 </table>
+<p align="center"><img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/featured-projects.svg" width="100%" alt="Featured Projects"></p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/MuthairSyed/AI-Ram-Booster"><img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/ai-ram-booster.svg" width="100%" alt="AI RAM Booster"></a>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/MuthairSyed/Cybersecurity-Automation"><img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/cybersecurity.svg" width="100%" alt="Cybersecurity Automation"></a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/MuthairSyed/ReDDxStore"><img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/reddxstore.svg" width="100%" alt="ReDDxStore"></a>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/MuthairSyed"><img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/youtube-portfolio.svg" width="100%" alt="YouTube Portfolio"></a>
+</td>
+</tr>
+</table>
+<p align="center"><img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/tech-stack.svg" width="100%" alt="Tech Stack"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/MuthairSyed/MuthairSyed/main/assets/footer.svg" width="100%" alt="Footer"></p>
