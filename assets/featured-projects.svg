@@ -1,0 +1,1339 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1300"
+     height="720"
+     viewBox="0 0 1300 720">
+
+  <defs>
+
+    <!-- ================= BACKGROUND ================= -->
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="100%" stop-color="#0B0B0B"/>
+    </linearGradient>
+
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+
+    <pattern id="grid"
+             width="40"
+             height="40"
+             patternUnits="userSpaceOnUse">
+
+      <path d="M40 0H0V40"
+            fill="none"
+            stroke="#161616"
+            stroke-width="1"/>
+
+    </pattern>
+
+    <!-- ================= GLOW ================= -->
+
+    <filter id="glow">
+
+      <feGaussianBlur
+        stdDeviation="2"
+        result="blur"/>
+
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+
+    </filter>
+
+    <filter id="softGlow">
+
+      <feGaussianBlur
+        stdDeviation="5"
+        result="blur"/>
+
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+
+    </filter>
+
+    <!-- ================= CLIPPING ================= -->
+
+    <clipPath id="card1">
+      <rect
+        x="35"
+        y="115"
+        width="595"
+        height="255"
+        rx="4"/>
+    </clipPath>
+
+    <clipPath id="card2">
+      <rect
+        x="670"
+        y="115"
+        width="595"
+        height="255"
+        rx="4"/>
+    </clipPath>
+
+    <clipPath id="card3">
+      <rect
+        x="35"
+        y="405"
+        width="595"
+        height="255"
+        rx="4"/>
+    </clipPath>
+
+    <clipPath id="card4">
+      <rect
+        x="670"
+        y="405"
+        width="595"
+        height="255"
+        rx="4"/>
+    </clipPath>
+
+  </defs>
+
+
+  <!-- ================================================= -->
+  <!-- BACKGROUND -->
+  <!-- ================================================= -->
+
+  <rect
+    width="1300"
+    height="720"
+    fill="url(#bg)"/>
+
+  <rect
+    width="1300"
+    height="720"
+    fill="url(#grid)"/>
+
+
+  <!-- ================================================= -->
+  <!-- HEADER -->
+  <!-- ================================================= -->
+
+  <text
+    x="45"
+    y="55"
+    fill="#FFFFFF"
+    font-family="monospace"
+    font-size="22"
+    font-weight="700">
+
+    // FEATURED_PROJECTS
+
+  </text>
+
+  <text
+    x="1255"
+    y="55"
+    fill="#777777"
+    font-family="monospace"
+    font-size="11"
+    text-anchor="end">
+
+    PROJECT_MATRIX // 04 MODULES
+
+  </text>
+
+
+  <text
+    x="45"
+    y="80"
+    fill="#AAAAAA"
+    font-family="monospace"
+    font-size="11">
+
+    &gt; INITIALIZING PROJECT INTERFACE_
+
+    <animate
+      attributeName="opacity"
+      values="1;0.35;1"
+      dur="1.2s"
+      repeatCount="indefinite"/>
+
+  </text>
+
+
+  <circle
+    cx="1248"
+    cy="77"
+    r="4"
+    fill="#FFFFFF"
+    filter="url(#glow)">
+
+    <animate
+      attributeName="opacity"
+      values=".2;1;.2"
+      dur="1.4s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+
+  <text
+    x="1238"
+    y="81"
+    fill="#BBBBBB"
+    font-family="monospace"
+    font-size="10"
+    text-anchor="end">
+
+    ONLINE
+
+  </text>
+
+
+  <line
+    x1="40"
+    y1="95"
+    x2="1260"
+    y2="95"
+    stroke="#333333"/>
+
+
+  <!-- ================================================= -->
+  <!-- AI RAM BOOSTER -->
+  <!-- ================================================= -->
+
+  <a
+    xlink:href="https://github.com/MuthairSyed/AI-Ram-Booster"
+    target="_blank">
+
+    <g>
+
+      <rect
+        x="35"
+        y="115"
+        width="595"
+        height="255"
+        rx="4"
+        fill="url(#panel)"
+        stroke="#444444"/>
+
+
+      <!-- HUD CORNERS -->
+
+      <path
+        d="M35 145V115H65
+           M600 115H630V145
+           M35 340V370H65
+           M600 370H630V340"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="2"/>
+
+
+      <!-- PARTICLES -->
+
+      <g
+        clip-path="url(#card1)"
+        opacity=".5">
+
+        <circle
+          cx="100"
+          cy="180"
+          r="1.5"
+          fill="#FFFFFF">
+
+          <animate
+            attributeName="cx"
+            values="80;580;80"
+            dur="9s"
+            repeatCount="indefinite"/>
+
+        </circle>
+
+
+        <circle
+          cx="420"
+          cy="300"
+          r="1"
+          fill="#FFFFFF">
+
+          <animate
+            attributeName="cy"
+            values="300;150;300"
+            dur="7s"
+            repeatCount="indefinite"/>
+
+        </circle>
+
+
+        <path
+          d="M70 310
+             L180 220
+             L300 280
+             L430 170
+             L600 250"
+          fill="none"
+          stroke="#FFFFFF"
+          opacity=".18">
+
+          <animate
+            attributeName="stroke-dashoffset"
+            from="400"
+            to="0"
+            dur="5s"
+            repeatCount="indefinite"/>
+
+        </path>
+
+      </g>
+
+
+      <!-- ICON -->
+
+      <rect
+        x="55"
+        y="140"
+        width="55"
+        height="55"
+        fill="#0A0A0A"
+        stroke="#777777"/>
+
+
+      <text
+        x="82"
+        y="176"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="18"
+        text-anchor="middle">
+
+        RAM
+
+      </text>
+
+
+      <!-- TITLE -->
+
+      <text
+        x="130"
+        y="158"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="19"
+        font-weight="700">
+
+        AI RAM BOOSTER
+
+        <animate
+          attributeName="opacity"
+          values="1;0.45;1"
+          dur="4.2s"
+          repeatCount="indefinite"/>
+
+      </text>
+
+
+      <text
+        x="130"
+        y="180"
+        fill="#777777"
+        font-family="monospace"
+        font-size="10">
+
+        WINDOWS / SYSTEM OPTIMIZATION
+
+      </text>
+
+
+      <!-- STATUS -->
+
+      <circle
+        cx="585"
+        cy="151"
+        r="4"
+        fill="#FFFFFF"
+        filter="url(#glow)">
+
+        <animate
+          attributeName="opacity"
+          values=".2;1;.2"
+          dur="1.3s"
+          repeatCount="indefinite"/>
+
+      </circle>
+
+
+      <text
+        x="575"
+        y="176"
+        fill="#AAAAAA"
+        font-family="monospace"
+        font-size="9"
+        text-anchor="end">
+
+        ACTIVE
+
+      </text>
+
+
+      <!-- DESCRIPTION -->
+
+      <text
+        x="55"
+        y="225"
+        fill="#AAAAAA"
+        font-family="monospace"
+        font-size="11">
+
+        Windows system optimization utility focused on
+
+      </text>
+
+
+      <text
+        x="55"
+        y="243"
+        fill="#AAAAAA"
+        font-family="monospace"
+        font-size="11">
+
+        RAM management, performance tuning and gaming.
+
+      </text>
+
+
+      <!-- STACK -->
+
+      <text
+        x="55"
+        y="275"
+        fill="#666666"
+        font-family="monospace"
+        font-size="9">
+
+        STACK
+
+      </text>
+
+
+      <text
+        x="55"
+        y="293"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="10">
+
+        Python • JavaScript • Electron • Node.js • Windows
+
+      </text>
+
+
+      <!-- TERMINAL -->
+
+      <text
+        x="55"
+        y="325"
+        fill="#777777"
+        font-family="monospace"
+        font-size="9">
+
+        &gt; ./AI_RAM_BOOSTER --status
+
+      </text>
+
+
+      <text
+        x="55"
+        y="345"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="9">
+
+        REPOSITORY: ONLINE
+
+      </text>
+
+
+      <text
+        x="590"
+        y="345"
+        fill="#777777"
+        font-family="monospace"
+        font-size="9"
+        text-anchor="end">
+
+        GITHUB ↗
+
+      </text>
+
+    </g>
+
+  </a>
+
+
+  <!-- ================================================= -->
+  <!-- CYBERSECURITY AUTOMATION -->
+  <!-- ================================================= -->
+
+  <a
+    xlink:href="https://github.com/MuthairSyed/MuthairSyed"
+    target="_blank">
+
+    <g>
+
+      <rect
+        x="670"
+        y="115"
+        width="595"
+        height="255"
+        rx="4"
+        fill="url(#panel)"
+        stroke="#444444"/>
+
+
+      <path
+        d="M670 145V115H700
+           M1235 115H1265V145
+           M670 340V370H700
+           M1235 370H1265V340"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="2"/>
+
+
+      <!-- PARTICLES -->
+
+      <g
+        clip-path="url(#card2)"
+        opacity=".55">
+
+        <circle
+          cx="730"
+          cy="280"
+          r="1.4"
+          fill="#FFFFFF">
+
+          <animate
+            attributeName="cx"
+            values="700;1220;700"
+            dur="8s"
+            repeatCount="indefinite"/>
+
+        </circle>
+
+
+        <circle
+          cx="1080"
+          cy="180"
+          r="1.2"
+          fill="#FFFFFF">
+
+          <animate
+            attributeName="cy"
+            values="170;330;170"
+            dur="6s"
+            repeatCount="indefinite"/>
+
+        </circle>
+
+
+        <path
+          d="M690 320
+             L790 180
+             L920 300
+             L1080 190
+             L1240 310"
+          fill="none"
+          stroke="#FFFFFF"
+          opacity=".16"
+          stroke-dasharray="8 10">
+
+          <animate
+            attributeName="stroke-dashoffset"
+            from="80"
+            to="0"
+            dur="3s"
+            repeatCount="indefinite"/>
+
+        </path>
+
+      </g>
+
+
+      <!-- ICON -->
+
+      <rect
+        x="690"
+        y="140"
+        width="55"
+        height="55"
+        fill="#0A0A0A"
+        stroke="#777777"/>
+
+
+      <text
+        x="717"
+        y="176"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="16"
+        text-anchor="middle">
+
+        SEC
+
+      </text>
+
+
+      <!-- TITLE -->
+
+      <text
+        x="765"
+        y="158"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="18"
+        font-weight="700">
+
+        CYBERSECURITY AUTOMATION
+
+        <animate
+          attributeName="opacity"
+          values="1;0.55;1"
+          dur="5s"
+          repeatCount="indefinite"/>
+
+      </text>
+
+
+      <text
+        x="765"
+        y="180"
+        fill="#777777"
+        font-family="monospace"
+        font-size="10">
+
+        SECURITY / AUTOMATION
+
+      </text>
+
+
+      <!-- STATUS -->
+
+      <circle
+        cx="1220"
+        cy="151"
+        r="4"
+        fill="#FFFFFF"
+        filter="url(#glow)">
+
+        <animate
+          attributeName="opacity"
+          values=".2;1;.2"
+          dur="1.6s"
+          repeatCount="indefinite"/>
+
+      </circle>
+
+
+      <text
+        x="1210"
+        y="176"
+        fill="#AAAAAA"
+        font-family="monospace"
+        font-size="9"
+        text-anchor="end">
+
+        ACTIVE
+
+      </text>
+
+
+      <!-- DESCRIPTION -->
+
+      <text
+        x="690"
+        y="225"
+        fill="#AAAAAA"
+        font-family="monospace"
+        font-size="11">
+
+        Cybersecurity utilities and automation focused on
+
+      </text>
+
+
+      <text
+        x="690"
+        y="243"
+        fill="#AAAAAA"
+        font-family="monospace"
+        font-size="11">
+
+        vulnerability management, monitoring and reporting.
+
+      </text>
+
+
+      <!-- STACK -->
+
+      <text
+        x="690"
+        y="275"
+        fill="#666666"
+        font-family="monospace"
+        font-size="9">
+
+        STACK
+
+      </text>
+
+
+      <text
+        x="690"
+        y="293"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="10">
+
+        Python • Defender • Sentinel • KQL • Security Automation
+
+      </text>
+
+
+      <!-- TERMINAL -->
+
+      <text
+        x="690"
+        y="325"
+        fill="#777777"
+        font-family="monospace"
+        font-size="9">
+
+        &gt; ./SECURITY_AUTOMATION --status
+
+      </text>
+
+
+      <text
+        x="690"
+        y="345"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="9">
+
+        REPOSITORY: ONLINE
+
+      </text>
+
+
+      <text
+        x="1225"
+        y="345"
+        fill="#777777"
+        font-family="monospace"
+        font-size="9"
+        text-anchor="end">
+
+        GITHUB ↗
+
+      </text>
+
+    </g>
+
+  </a>
+
+
+  <!-- ================================================= -->
+  <!-- REDDXSTORE -->
+  <!-- ================================================= -->
+
+  <a
+    xlink:href="https://github.com/MuthairSyed/ReDDxStore"
+    target="_blank">
+
+    <g>
+
+      <rect
+        x="35"
+        y="405"
+        width="595"
+        height="255"
+        rx="4"
+        fill="url(#panel)"
+        stroke="#444444"/>
+
+
+      <path
+        d="M35 435V405H65
+           M600 405H630V435
+           M35 630V660H65
+           M600 660H630V630"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="2"/>
+
+
+      <!-- PARTICLES -->
+
+      <g
+        clip-path="url(#card3)"
+        opacity=".5">
+
+        <circle
+          cx="80"
+          cy="540"
+          r="1.4"
+          fill="#FFFFFF">
+
+          <animate
+            attributeName="cx"
+            values="70;590;70"
+            dur="10s"
+            repeatCount="indefinite"/>
+
+        </circle>
+
+
+        <circle
+          cx="500"
+          cy="450"
+          r="1.2"
+          fill="#FFFFFF">
+
+          <animate
+            attributeName="cy"
+            values="440;620;440"
+            dur="6.5s"
+            repeatCount="indefinite"/>
+
+        </circle>
+
+
+        <path
+          d="M70 620
+             L180 470
+             L310 570
+             L450 460
+             L600 600"
+          fill="none"
+          stroke="#FFFFFF"
+          opacity=".16">
+
+          <animate
+            attributeName="stroke-dashoffset"
+            from="500"
+            to="0"
+            dur="6s"
+            repeatCount="indefinite"/>
+
+        </path>
+
+      </g>
+
+
+      <!-- ICON -->
+
+      <rect
+        x="55"
+        y="430"
+        width="55"
+        height="55"
+        fill="#0A0A0A"
+        stroke="#777777"/>
+
+
+      <text
+        x="82"
+        y="466"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="15"
+        text-anchor="middle">
+
+        WEB
+
+      </text>
+
+
+      <!-- TITLE -->
+
+      <text
+        x="130"
+        y="448"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="20"
+        font-weight="700">
+
+        REDDXSTORE
+
+        <animate
+          attributeName="opacity"
+          values="1;0.5;1"
+          dur="4.8s"
+          repeatCount="indefinite"/>
+
+      </text>
+
+
+      <text
+        x="130"
+        y="470"
+        fill="#777777"
+        font-family="monospace"
+        font-size="10">
+
+        FULL-STACK E-COMMERCE
+
+      </text>
+
+
+      <!-- STATUS -->
+
+      <circle
+        cx="585"
+        cy="441"
+        r="4"
+        fill="#FFFFFF"
+        filter="url(#glow)">
+
+        <animate
+          attributeName="opacity"
+          values=".2;1;.2"
+          dur="1.2s"
+          repeatCount="indefinite"/>
+
+      </circle>
+
+
+      <text
+        x="575"
+        y="466"
+        fill="#AAAAAA"
+        font-family="monospace"
+        font-size="9"
+        text-anchor="end">
+
+        ACTIVE
+
+      </text>
+
+
+      <!-- DESCRIPTION -->
+
+      <text
+        x="55"
+        y="515"
+        fill="#AAAAAA"
+        font-family="monospace"
+        font-size="11">
+
+        Full-stack e-commerce platform for product management,
+
+      </text>
+
+
+      <text
+        x="55"
+        y="533"
+        fill="#AAAAAA"
+        font-family="monospace"
+        font-size="11">
+
+        online shopping, payments and administration.
+
+      </text>
+
+
+      <!-- STACK -->
+
+      <text
+        x="55"
+        y="565"
+        fill="#666666"
+        font-family="monospace"
+        font-size="9">
+
+        STACK
+
+      </text>
+
+
+      <text
+        x="55"
+        y="583"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="10">
+
+        PHP • MySQL • JavaScript • HTML • CSS • Razorpay
+
+      </text>
+
+
+      <!-- TERMINAL -->
+
+      <text
+        x="55"
+        y="615"
+        fill="#777777"
+        font-family="monospace"
+        font-size="9">
+
+        &gt; ./REDDXSTORE --status
+
+      </text>
+
+
+      <text
+        x="55"
+        y="635"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="9">
+
+        LIVE: REDDXSTORE.PAGE.GD
+
+      </text>
+
+
+      <text
+        x="590"
+        y="635"
+        fill="#777777"
+        font-family="monospace"
+        font-size="9"
+        text-anchor="end">
+
+        GITHUB ↗ • LIVE ↗
+
+      </text>
+
+    </g>
+
+  </a>
+
+
+  <!-- ================================================= -->
+  <!-- YOUTUBE PORTFOLIO -->
+  <!-- ================================================= -->
+
+  <a
+    xlink:href="https://github.com/MuthairSyed/Youtube-Portfolio"
+    target="_blank">
+
+    <g>
+
+      <rect
+        x="670"
+        y="405"
+        width="595"
+        height="255"
+        rx="4"
+        fill="url(#panel)"
+        stroke="#444444"/>
+
+
+      <path
+        d="M670 435V405H700
+           M1235 405H1265V435
+           M670 630V660H700
+           M1235 660H1265V630"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="2"/>
+
+
+      <!-- PARTICLES -->
+
+      <g
+        clip-path="url(#card4)"
+        opacity=".5">
+
+        <circle
+          cx="740"
+          cy="620"
+          r="1.5"
+          fill="#FFFFFF">
+
+          <animate
+            attributeName="cx"
+            values="690;1230;690"
+            dur="9s"
+            repeatCount="indefinite"/>
+
+        </circle>
+
+
+        <circle
+          cx="1120"
+          cy="450"
+          r="1.1"
+          fill="#FFFFFF">
+
+          <animate
+            attributeName="cy"
+            values="440;620;440"
+            dur="7s"
+            repeatCount="indefinite"/>
+
+        </circle>
+
+
+        <path
+          d="M690 600
+             L800 450
+             L930 570
+             L1080 460
+             L1240 590"
+          fill="none"
+          stroke="#FFFFFF"
+          opacity=".16"
+          stroke-dasharray="5 9">
+
+          <animate
+            attributeName="stroke-dashoffset"
+            from="100"
+            to="0"
+            dur="4s"
+            repeatCount="indefinite"/>
+
+        </path>
+
+      </g>
+
+
+      <!-- ICON -->
+
+      <rect
+        x="690"
+        y="430"
+        width="55"
+        height="55"
+        fill="#0A0A0A"
+        stroke="#777777"/>
+
+
+      <text
+        x="717"
+        y="466"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="15"
+        text-anchor="middle">
+
+        YT
+
+      </text>
+
+
+      <!-- TITLE -->
+
+      <text
+        x="765"
+        y="448"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="19"
+        font-weight="700">
+
+        YOUTUBE PORTFOLIO
+
+        <animate
+          attributeName="opacity"
+          values="1;0.5;1"
+          dur="5.2s"
+          repeatCount="indefinite"/>
+
+      </text>
+
+
+      <text
+        x="765"
+        y="470"
+        fill="#777777"
+        font-family="monospace"
+        font-size="10">
+
+        GAMING / CONTENT / WEB
+
+      </text>
+
+
+      <!-- STATUS -->
+
+      <circle
+        cx="1220"
+        cy="441"
+        r="4"
+        fill="#FFFFFF"
+        filter="url(#glow)">
+
+        <animate
+          attributeName="opacity"
+          values=".2;1;.2"
+          dur="1.5s"
+          repeatCount="indefinite"/>
+
+      </circle>
+
+
+      <text
+        x="1210"
+        y="466"
+        fill="#AAAAAA"
+        font-family="monospace"
+        font-size="9"
+        text-anchor="end">
+
+        ACTIVE
+
+      </text>
+
+
+      <!-- DESCRIPTION -->
+
+      <text
+        x="690"
+        y="515"
+        fill="#AAAAAA"
+        font-family="monospace"
+        font-size="11">
+
+        Interactive gaming and YouTube portfolio featuring channel
+
+      </text>
+
+
+      <text
+        x="690"
+        y="533"
+        fill="#AAAAAA"
+        font-family="monospace"
+        font-size="11">
+
+        content, gaming projects, statistics and responsive UI.
+
+      </text>
+
+
+      <!-- STACK -->
+
+      <text
+        x="690"
+        y="565"
+        fill="#666666"
+        font-family="monospace"
+        font-size="9">
+
+        STACK
+
+      </text>
+
+
+      <text
+        x="690"
+        y="583"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="10">
+
+        PHP • JavaScript • HTML • CSS • MySQL • YouTube API
+
+      </text>
+
+
+      <!-- TERMINAL -->
+
+      <text
+        x="690"
+        y="615"
+        fill="#777777"
+        font-family="monospace"
+        font-size="9">
+
+        &gt; ./YOUTUBE_PORTFOLIO --status
+
+      </text>
+
+
+      <text
+        x="690"
+        y="635"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="9">
+
+        LIVE: AURORAXYT.GAMER.GD
+
+      </text>
+
+
+      <text
+        x="1225"
+        y="635"
+        fill="#777777"
+        font-family="monospace"
+        font-size="9"
+        text-anchor="end">
+
+        GITHUB ↗ • LIVE ↗
+
+      </text>
+
+    </g>
+
+  </a>
+
+
+  <!-- ================================================= -->
+  <!-- GLOBAL SCANNING LINE -->
+  <!-- ================================================= -->
+
+  <rect
+    x="0"
+    y="105"
+    width="1300"
+    height="2"
+    fill="#FFFFFF"
+    opacity=".12"
+    filter="url(#softGlow)">
+
+    <animate
+      attributeName="y"
+      values="105;665;105"
+      dur="9s"
+      repeatCount="indefinite"/>
+
+  </rect>
+
+
+  <!-- ================================================= -->
+  <!-- FOOTER STATUS -->
+  <!-- ================================================= -->
+
+  <text
+    x="45"
+    y="700"
+    fill="#666666"
+    font-family="monospace"
+    font-size="10">
+
+    &gt; PROJECT_MATRIX: OPERATIONAL
+
+  </text>
+
+
+  <text
+    x="1255"
+    y="700"
+    fill="#666666"
+    font-family="monospace"
+    font-size="10"
+    text-anchor="end">
+
+    MUTHAIR_SYED // ENDPOINT_READY
+
+  </text>
+
+</svg>
