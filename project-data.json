@@ -2,41 +2,67 @@
   "projects": [
     {
       "name": "AI RAM Booster",
-      "description": "",
-      "technologies": [],
+      "description": "Windows system optimization utility focused on RAM management, performance tuning and gaming optimization.",
+      "technologies": [
+        "Python",
+        "JavaScript",
+        "Electron",
+        "Node.js",
+        "Windows"
+      ],
       "github": "https://github.com/MuthairSyed/AI-Ram-Booster",
       "live_demo": null,
-      "status": "",
+      "status": "ACTIVE",
       "last_updated": "AUTO",
       "icon": "RAM"
     },
     {
       "name": "Cybersecurity Automation",
-      "description": "",
-      "technologies": [],
+      "description": "Cybersecurity utilities and automation focused on vulnerability management, security monitoring and reporting.",
+      "technologies": [
+        "Python",
+        "Microsoft Defender",
+        "Microsoft Sentinel",
+        "KQL",
+        "Security Automation"
+      ],
       "github": "https://github.com/MuthairSyed/MuthairSyed",
       "live_demo": null,
-      "status": "",
+      "status": "ACTIVE",
       "last_updated": "AUTO",
       "icon": "SEC"
     },
     {
       "name": "ReDDxStore",
-      "description": "",
-      "technologies": [],
+      "description": "Full-stack e-commerce platform for product management, online shopping, payments and administration.",
+      "technologies": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Razorpay"
+      ],
       "github": "https://github.com/MuthairSyed/ReDDxStore",
       "live_demo": "https://reddxstore.page.gd/",
-      "status": "",
+      "status": "ACTIVE",
       "last_updated": "AUTO",
       "icon": "WEB"
     },
     {
       "name": "YouTube Portfolio",
-      "description": "",
-      "technologies": [],
+      "description": "Interactive gaming and YouTube portfolio featuring channel content, gaming projects, statistics and a responsive web experience.",
+      "technologies": [
+        "PHP",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "MySQL",
+        "YouTube API"
+      ],
       "github": "https://github.com/MuthairSyed/Youtube-Portfolio",
       "live_demo": "http://auroraxyt.gamer.gd/",
-      "status": "",
+      "status": "ACTIVE",
       "last_updated": "AUTO",
       "icon": "YT"
     }
