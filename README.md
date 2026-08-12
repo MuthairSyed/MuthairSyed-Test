@@ -19,10 +19,14 @@
   <a href="https://github.com/MuthairSyed">
     <img src="https://img.shields.io/github/followers/MuthairSyed?style=flat-square&label=FOLLOWERS&labelColor=000000&color=FFFFFF&logo=github&logoColor=FFFFFF" />
   </a>
+  
+<a href="https://github.com/MuthairSyed?tab=repositories">
+  <img
+    src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMuthairSyed%2FMuthairSyed%2Fmain%2Frepo-count.json%3Fv%3D1&style=flat-square&label=REPOSITORIES&labelColor=000000&color=FFFFFF"
+    alt="Repositories"
+  />
+</a>
 
-  <a href="https://github.com/MuthairSyed?tab=repositories">
-    <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FMuthairSyed%2FMuthairSyed%2Fmain%2Frepo-count.json&style=flat-square&labelColor=000000" />
-  </a>
 
   <a href="https://github.com/MuthairSyed?tab=stars">
     <img src="https://img.shields.io/github/stars/MuthairSyed?style=flat-square&label=STARS&labelColor=000000&color=FFFFFF&logo=github&logoColor=FFFFFF" />
