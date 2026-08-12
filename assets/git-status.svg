@@ -314,7 +314,7 @@
         font-size="18"
         font-weight="bold">
 
-    <!-- GITHUB_REPOSITORIES -->
+    12
 
   </text>
 
@@ -352,7 +352,7 @@
         font-size="15"
         font-weight="bold">
 
-    <!-- GITHUB_FOLLOWERS -->
+    0
 
   </text>
 
@@ -379,7 +379,7 @@
         font-size="15"
         font-weight="bold">
 
-    <!-- GITHUB_FOLLOWING -->
+    0
 
   </text>
 
@@ -406,7 +406,7 @@
         font-size="15"
         font-weight="bold">
 
-    <!-- GITHUB_STARS -->
+    0
 
   </text>
 
@@ -433,7 +433,7 @@
         font-size="15"
         font-weight="bold">
 
-    <!-- GITHUB_FORKS -->
+    0
 
   </text>
 
@@ -524,7 +524,7 @@
         font-family="monospace"
         font-size="12">
 
-    <!-- GITHUB_LATEST_COMMIT -->
+    12 Aug 2026
 
   </text>
 
@@ -550,7 +550,7 @@
         font-family="monospace"
         font-size="12">
 
-    <!-- GITHUB_LAST_ACTIVITY -->
+    12 Aug 2026
 
   </text>
 
@@ -576,7 +576,7 @@
         font-family="monospace"
         font-size="12">
 
-    <!-- GITHUB_UPDATED -->
+    12 Aug 2026
 
   </text>
 
