@@ -1,0 +1,304 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="650"
+     height="330"
+     viewBox="0 0 650 330">
+
+  <defs>
+
+    <linearGradient id="fade"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="1">
+
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="100%" stop-color="#0D0D0D"/>
+
+    </linearGradient>
+
+    <filter id="glow">
+
+      <feGaussianBlur stdDeviation="2"
+                      result="blur"/>
+
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+
+    </filter>
+
+  </defs>
+
+
+  <!-- BACKGROUND -->
+
+  <rect width="650"
+        height="330"
+        fill="url(#fade)"/>
+
+
+  <!-- GRID -->
+
+  <g stroke="#161616"
+     stroke-width="1"
+     opacity=".7">
+
+    <path d="M0 55H650"/>
+    <path d="M0 110H650"/>
+    <path d="M0 165H650"/>
+    <path d="M0 220H650"/>
+    <path d="M0 275H650"/>
+
+    <path d="M65 0V330"/>
+    <path d="M130 0V330"/>
+    <path d="M195 0V330"/>
+    <path d="M260 0V330"/>
+    <path d="M325 0V330"/>
+    <path d="M390 0V330"/>
+    <path d="M455 0V330"/>
+    <path d="M520 0V330"/>
+    <path d="M585 0V330"/>
+
+  </g>
+
+
+  <!-- FRAME -->
+
+  <rect x="18"
+        y="18"
+        width="614"
+        height="294"
+        fill="none"
+        stroke="#333333"
+        stroke-width="1"/>
+
+
+  <!-- CORNERS -->
+
+  <path d="M18 60V18H60"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="2"/>
+
+  <path d="M590 18H632V60"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="2"/>
+
+  <path d="M18 270V312H60"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="2"/>
+
+  <path d="M590 312H632V270"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="2"/>
+
+
+  <!-- TERMINAL HEADER -->
+
+  <text x="42"
+        y="52"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="16"
+        font-weight="bold">
+
+    // WHOAMI
+
+  </text>
+
+
+  <text x="608"
+        y="52"
+        fill="#666666"
+        font-family="monospace"
+        font-size="11"
+        text-anchor="end">
+
+    PROFILE_ID: MS-01
+
+  </text>
+
+
+  <!-- STATUS -->
+
+  <circle cx="48"
+          cy="82"
+          r="4"
+          fill="#FFFFFF"
+          filter="url(#glow)">
+
+    <animate attributeName="opacity"
+             values=".2;1;.2"
+             dur="1.6s"
+             repeatCount="indefinite"/>
+
+  </circle>
+
+
+  <text x="62"
+        y="87"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="12">
+
+    SYSTEM USER: MUTHAIR_SYED
+
+  </text>
+
+
+  <!-- DIVIDER -->
+
+  <line x1="42"
+        y1="105"
+        x2="608"
+        y2="105"
+        stroke="#333333"/>
+
+
+  <!-- PROFILE DATA -->
+
+  <text x="42"
+        y="135"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    NAME
+
+  </text>
+
+  <text x="190"
+        y="135"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="12">
+
+    Muthair Syed
+
+  </text>
+
+
+  <text x="42"
+        y="165"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    ROLE
+
+  </text>
+
+  <text x="190"
+        y="165"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="12">
+
+    DevSecOps Engineer
+
+  </text>
+
+
+  <text x="42"
+        y="195"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    FOCUS
+
+  </text>
+
+  <text x="190"
+        y="195"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="12">
+
+    Cybersecurity • DevSecOps
+
+  </text>
+
+
+  <text x="42"
+        y="225"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    BUILD
+
+  </text>
+
+  <text x="190"
+        y="225"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="12">
+
+    Security • Automation • Tools
+
+  </text>
+
+
+  <text x="42"
+        y="255"
+        fill="#777777"
+        font-family="monospace"
+        font-size="12">
+
+    STACK
+
+  </text>
+
+  <text x="190"
+        y="255"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="12">
+
+    Python • Azure • GitHub • Linux
+
+  </text>
+
+
+  <!-- TERMINAL CURSOR -->
+
+  <text x="42"
+        y="285"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="12">
+
+    &gt; security_mode: ACTIVE_
+
+    <animate attributeName="opacity"
+             values="1;0;1"
+             dur="1.2s"
+             repeatCount="indefinite"/>
+
+  </text>
+
+
+  <!-- MOVING SCAN -->
+
+  <rect x="20"
+        y="18"
+        width="2"
+        height="294"
+        fill="#FFFFFF"
+        opacity=".08">
+
+    <animate attributeName="x"
+             values="20;630;20"
+             dur="7s"
+             repeatCount="indefinite"/>
+
+  </rect>
+
+
+</svg>
